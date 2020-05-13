@@ -1,23 +1,19 @@
 import styled from "styled-components";
 
 
-export const CloseButton = styled.button`
-  
+export const StyledSvg = styled.svg`
+size:200%;`
+
+export const CloseButton = styled.button`  
   background:lightgrey;
   float:right;
-  border-radius:60%
-  `;
-
-export const StyledLink1 = styled.p`
-  text-align:right;
-  color:white;`;
-
+  border-radius:60%`;
 
 export const Root = styled.div`
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  z-index:2;
+  z-index:1;
 `;
 
 export const Overlay = styled.div`
@@ -26,8 +22,8 @@ export const Overlay = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, .8);
-  z-index:2;
+  background: rgba(0, 0, 0, 0.8);
+  z-index:3;
 `;
 
 export const Dialog = styled.div`
@@ -39,14 +35,21 @@ export const Dialog = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.4s ease-in-out;
-  z-index: 1;
+  z-index: 3;
   color:black;
   a {
       font-weight:bold;
       color:black;
   }
   a:hover {
-    color:white;
+    color:white
+  }
+  button {
+      top:0;
+      right:0;
+  }
+  button:hover {
+    color:white
   }
   tr:hover {
     color:white
@@ -57,9 +60,9 @@ export const StyledRow = styled.tr`
 
 export const StyledLink = styled.a`
 color:black;
+z-index:3;
 padding:20px;
-hover:white;
-font-size:24px`;
+font-size:24px;`;
 
 export const StyledText = styled.p`
 color:white;
@@ -68,7 +71,4 @@ font-weight:bold;
 
 export const LinkSet = styled.div`
 display:flex;
-justify-content:center;
-a:hover {
-  color:white
-};`;
+justify-content:center;`;

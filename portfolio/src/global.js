@@ -22,7 +22,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   p {
     text-align:center;
-    letter-spacing:10px;
+    letter-spacing:8px;
+    font-weight: bold;
   }
 
   div {
@@ -31,10 +32,5 @@ export const GlobalStyles = createGlobalStyle`
   small {
     display: block;
     font-size:12px;
-  }
-  a {
-    font-size: 8;
-    color: ${({ theme }) => theme.primaryHover};
-    text-decoration: none;
   }
 `

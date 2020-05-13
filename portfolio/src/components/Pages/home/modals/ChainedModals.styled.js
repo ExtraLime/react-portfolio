@@ -1,23 +1,16 @@
 import styled from "styled-components";
-
+import { ReactBurgerMenu, bubble } from "react-burger-menu";
 
 export const CloseButton = styled.button`
-  
-  background:lightgrey;
-  float:right;
-  border-radius:60%
-  `;
-
-export const StyledLink1 = styled.p`
-  text-align:right;
-  color:white;`;
-
+  text-weight:bold;
+  justify-text:right;
+  border-radius:60%;
+  background: rgb(131, 193, 255);`;
 
 export const Root = styled.div`
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  z-index:2;
 `;
 
 export const Overlay = styled.div`
@@ -26,8 +19,7 @@ export const Overlay = styled.div`
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, .8);
-  z-index:2;
+  background: rgba(0, 0, 0, 0.3);
 `;
 
 export const Dialog = styled.div`
@@ -45,30 +37,21 @@ export const Dialog = styled.div`
       font-weight:bold;
       color:black;
   }
-  a:hover {
-    color:white;
-  }
-  tr:hover {
-    color:white
+  button {
+      top:0;
+      right:0;
   }
 `;
-export const StyledRow = styled.tr`
-  color:black;`;
-
 export const StyledLink = styled.a`
 color:black;
-padding:20px;
-hover:white;
-font-size:24px`;
+z-index:1;
+padding:20px;`;
 
 export const StyledText = styled.p`
 color:white;
 font-weight:bold;
-`;
+z-index:1`;
 
 export const LinkSet = styled.div`
 display:flex;
-justify-content:center;
-a:hover {
-  color:white
-};`;
+justify-content:center;`;

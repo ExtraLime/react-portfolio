@@ -11,7 +11,7 @@ import sover from "./sover.svg"
 import twitter from "./twitter.svg"
 
 
-import { StyledIcon, StyledHomeIcon, ImgLink } from './Social.styled'
+import { StyledIcon, ImgLink } from './Social.styled'
 
 
 const SocialButtonGroup = (label) => {console.log(label)

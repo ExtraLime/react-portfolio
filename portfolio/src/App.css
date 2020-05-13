@@ -1,15 +1,18 @@
 
-
-
-
 .social-home {
   width:12%;
   display:flex;
   align-items:center;
   margin-top:100px;
   align-items:flex-start;
-
+  z-index:2;
 }
+.home {
+  align-items:flex-end;
+  justify-content: flex-end;
+}
+
+
 
   /* media queries */
 @media screen and (min-width: 750px) {
@@ -46,8 +49,12 @@
   align-self: flex-start;
   justify-content: flex-end;
   margin-top:0px;
+  z-index:10;
   
   
 }
-
+.social-socialmodal {
+  background:silver;
+  border-radius:5%;
+}
 }
