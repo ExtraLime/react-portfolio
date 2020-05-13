@@ -16,7 +16,7 @@ const ChainedModals = (props) => {
     const onClickNext = () => {
         if (idx < props.modalList.length) { 
             setIdx(idx+1) 
-        }else {props.onClose()}}
+        }}
   
 
     useEffect(() => {

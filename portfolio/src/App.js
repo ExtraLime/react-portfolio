@@ -14,7 +14,7 @@ import Home from './components/Pages/home/Home';
 import About from './components/Pages/About';
 import Contact from './components/Pages/Contact';
 import Error from './components/Pages/Error';
-import Tldr from './components/Pages/Tldr';
+import Tldr from './components/Pages/tldr/Tldr';
  
 export default function App()  {
   const [open, setOpen] = useState(false);

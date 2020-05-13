@@ -11,14 +11,15 @@ import sover from "./sover.svg"
 import twitter from "./twitter.svg"
 
 
-import { StyledIcon, ImgLink } from './Social.styled'
+import { StyledIcon, ImgLink, StyledButtons } from './Social.styled'
 
 
-const SocialButtonGroup = (label) => {console.log(label)
+const SocialButtonGroup = (label) => {
 
   return (
         <div className={`social-${label.label}`}>
           <div className={`social-buttons-${label.label}`}>
+            <StyledButtons >
             <ImgLink target="_blank" href='https://www.linkedin.com/in/william-morgan-745881a9/'>
               <StyledIcon src={linkedin}></StyledIcon>
             </ImgLink>
@@ -42,7 +43,8 @@ const SocialButtonGroup = (label) => {console.log(label)
             </ImgLink>
             <ImgLink target="_blank" href='https://twitter.com/1extralime'>
               <StyledIcon src={twitter}></StyledIcon>
-            </ImgLink>        
+            </ImgLink>
+            </StyledButtons>        
           </div>
         </div>
     )

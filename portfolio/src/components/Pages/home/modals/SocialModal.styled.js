@@ -13,7 +13,7 @@ export const Root = styled.div`
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  z-index:1;
+  z-index:2;
 `;
 
 export const Overlay = styled.div`
@@ -23,7 +23,7 @@ export const Overlay = styled.div`
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
-  z-index:3;
+  
 `;
 
 export const Dialog = styled.div`

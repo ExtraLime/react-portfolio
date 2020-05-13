@@ -10,7 +10,7 @@ const ExploreModal = (props) => {
         <Root>
             <Overlay>
                 <Dialog>                    
-                <StyledText>Connect With Me!</StyledText>
+                <StyledText>Click the Menu Button to navigate!</StyledText>
                 <p>Check Out My Projects Page</p>
                 <LinkSet>
                     <StyledRow><StyledLink onClick={() => props.onClose()}>Close</StyledLink></StyledRow>

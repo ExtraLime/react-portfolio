@@ -10,7 +10,7 @@ export const Root = styled.div`
   font-family: sans-serif;
   text-align: center;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 `;
 
 export const Overlay = styled.div`
