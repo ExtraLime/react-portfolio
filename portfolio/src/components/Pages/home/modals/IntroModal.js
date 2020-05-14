@@ -1,6 +1,6 @@
-import React, { useState, useContext, useRef } from "react";
+import React from "react";
 import { NavLink } from 'react-router-dom'
-import { Root, Overlay, Dialog, StyledLink, StyledText, LinkSet, CloseButton } from './IntroModal.styled'
+import { Root, Overlay, Dialog, StyledLink, StyledText, LinkSet, CloseButton,StyledRow } from './IntroModal.styled'
 
 const IntroModal = (props) => {
  
@@ -17,7 +17,7 @@ const IntroModal = (props) => {
                     <p>Click Continue!</p>
                     <LinkSet>
                         <StyledLink><NavLink to="/tldr">Go to TL;DR</NavLink></StyledLink>
-                        <StyledLink onClick={() => props.onClickNext()}>Continue</StyledLink>
+                        <StyledRow><StyledLink onClick={() => props.onClickNext()}>Continue</StyledLink></StyledRow>
                     </LinkSet>
                 </Dialog>
             </Overlay>

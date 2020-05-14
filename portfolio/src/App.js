@@ -1,7 +1,7 @@
-import React, { Component, useState, useEffect, useRef } from 'react';
+import React, {  useState, useRef } from 'react';
 import { useOnClickOutside } from './hooks';
 import { Menu } from './components';
-import  SocialButtonGroup  from './components/Pages/home/Socials/Socials'
+
 
 import { GlobalStyles } from './global';
 import { theme } from './theme';

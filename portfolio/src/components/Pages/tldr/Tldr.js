@@ -1,5 +1,5 @@
 import React from 'react';
-import useHover from '../../popup/useToggle'
+import useHover from '../../popup/useHover'
 import { StyledIntro, StyledSection, StyledBasics, StyledPic, StyledSectionHeader, IconGroup, DsBit } from './Tldr.styled'
 import profile from './profile.jpeg'
 import { faWhatsapp, fab } from '@fortawesome/free-brands-svg-icons'
@@ -70,7 +70,9 @@ const Tldr = () => {
                 <DsBit>Microsoft Windows, Apple OSX, Debian Linux (Ubuntu, PopOs, Kali, ...etc), Android, iOS, WindowsPhone</DsBit>
               <StyledSection>Cloud Computing</StyledSection> 
                 <DsBit>Amazon Web Services (AWS), Docker, GoogleCloudConsole, Azure, IBMCloud, DigitalOcean, Heroku, Netlify, Nginx</DsBit>
-                
+              <StyledSection>General</StyledSection> 
+                <DsBit>Microsoft Office (Excel, Word, Access, Outlook)</DsBit>
+                  
 
 
         </div>

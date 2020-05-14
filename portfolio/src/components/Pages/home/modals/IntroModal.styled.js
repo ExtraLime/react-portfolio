@@ -53,7 +53,8 @@ export const Dialog = styled.div`
   }
 `;
 export const StyledRow = styled.tr`
-  color:black;`;
+  color:black;
+  padding:20px`;
 
 export const StyledLink = styled.a`
 color:black;

@@ -1,5 +1,4 @@
-import React, { useState, useEffect, createContext } from 'react';
-import SocialButtonGroup from './Socials/Socials'
+import React from 'react';
 import Connect from './Connect'
 
 const Home = () => {

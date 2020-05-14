@@ -1,5 +1,4 @@
-import React, { useState, createContext, useRef } from "react";
-import { NavLink } from 'react-router-dom'
+import React from "react";
 import { Root, Overlay, Dialog, StyledLink, StyledText, LinkSet, StyledRow } from './SocialModal.styled'
 
 
