@@ -17,16 +17,14 @@ export const StyledBasics = styled.p`
     letter-spacing:1px`;
 
 export const StyledPic = styled.img`
-    align-self:left;
-    height:auto;
-    width:10%;
+    max-height:15rem;
     border-radius:30%;
-    filter:greyscale(100%)`;
+    filter:greyscale(100%);
+    align-self:center`;
 
 export const StyledSection = styled.h2`
     color:white;
-    font-size:16px;
-    align-items:right;
+    font-size:16px;    
     font-weight:bold;
     `
 export const IconGroup = styled.div`
@@ -34,12 +32,17 @@ export const IconGroup = styled.div`
     background:black
     align-self:flex-end;
     display:grid;
-    align-items:space-evenly;
     grid-template-columns:1fr 1fr 1fr;
     width:10rem;
-    z-index:-1;`;
+`;
 
 export const DsBit = styled.ul`
     font-size:14x;
     color:white;
     `;
+
+export const StyledProjectTitle = styled.h2`
+    color:white;
+    font-size:16px;    
+    font-weight:bold;
+    `

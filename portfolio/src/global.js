@@ -22,15 +22,12 @@ export const GlobalStyles = createGlobalStyle`
   }
   p {
     text-align:center;
-    letter-spacing:8px;
+    letter-spacing:3px;
     font-weight: bold;
   }
 
   div {
     text-align: center;
   }
-  small {
-    display: block;
-    font-size:12px;
-  }
+
 `

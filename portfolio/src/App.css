@@ -12,6 +12,31 @@
   background:black;
   grid-area:SocialButtons;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 .home-page {
   display:grid;
@@ -54,8 +79,65 @@
 #gotit:hover {
   color:dodgerblue;
 }
+.tldr-projects {
+  align-items:center;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  text-align:center;
+  justify-content:center;
+}
+.tldr-page {
+  letter-spacing: 0px;
+}
+.project1 {
+  align-items:center;
+  display:grid;
+  text-emphasis: wrap;
+  max-width: 33%;
+}
+.ds-info {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  letter-spacing:0px;
+  font-weight:bold;
+}
+.name-info {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "PhoneMail NameText .";
+}
+.info {
+  grid-area:text;
+  max-width:200px;
 
+}
+.basics-body {
+    text-align:center;
 
+}
+.name-avatar {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas: 
+  "pic text";
+}
+.avatar {
+  grid-area: pic;
+  max-width:200px;
+}
+.phonemail {
+  grid-area:PhoneMail;
+  display:grid;
+  align-content: flex-end;
+  justify-content: flex-end;
+}
+
+.basics {
+  display:flex;
+  flex-direction:column;
+  max-height:400px;
+}
 .social-menu {
   display:inline-block;
   flex-wrap:wrap;
