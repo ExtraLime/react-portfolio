@@ -5,7 +5,7 @@ const DataScience = () => {
     return (
         <>
         <div className='ds-info'>
-            <div className='meths'><h4>Methodologies:</h4>
+            <div className='meths'><h4 className='meth-label'>Methodologies:</h4>
             <ul>
             <li>Data access (API calls, advanced web scraping)</li>
             <li>experimental design</li>

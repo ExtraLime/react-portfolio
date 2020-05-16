@@ -15,11 +15,8 @@ import Projects from './Projects'
 import DataScience from './DataScience'
 import WebDev from './WebDev'
 import DevOps from './DevOps'
-
-
-
-
-
+import Experience from './Experience'
+import Education from './Education';
 
 const Tldr = () => {
     const [hoverDS, isDSHovered] = useHover();
@@ -31,8 +28,16 @@ const Tldr = () => {
     return (
         <div className='tldr-page'>
             <h1>TL;DR</h1>
-            <StyledIntro>Thanks for checking out my site. This is effectively my resume. More details about each section are discoverable throughout the site</StyledIntro>
-            <div className='basics'>
+            <nav className='tldr-nav'>
+                <ul className='tldr-list'>
+                    <a href='#basics'><li>Basics</li></a>
+                    <a href='#skills'><li>Skills</li></a>
+                    <a href='#projects'><li>Projects</li></a>
+                    <a href='#exp'><li>Experience</li></a>
+                    <a href='#edu'><li>Education</li></a>
+                </ul>
+            </nav>
+            <div id ='basics' className='basics'>
             <StyledSectionHeader>Basics</StyledSectionHeader>
             <div className='basics-body'>
         <div className='name-info'>
@@ -49,21 +54,21 @@ const Tldr = () => {
               </div>
             </a>
             </div>
-        <div className='name-avatar'>                
+                       
         <div className='avatar'><StyledPic src={profile} /></div>
         <div className='info'>                
-          <StyledBasics>William Morgan</StyledBasics>
-          <StyledBasics>32 years old</StyledBasics>
-          <StyledBasics>Portland, Oregon</StyledBasics>
-          <StyledBasics>Data Scientist </StyledBasics>
-          <StyledBasics>Full Stack Engineer</StyledBasics>
+          <h4>William Morgan</h4>
+          <h4>32 years old</h4>
+          <h4>Portland, Oregon</h4>
+          <h4>Data Scientist </h4>
+          <h4>Full Stack Engineer</h4>
           </div>
-        </div>
+        
        </div>                
        </div>
 
               </div>
-            <StyledSectionHeader>Skills</StyledSectionHeader>              
+            <StyledSectionHeader id='skills'>Skills</StyledSectionHeader>              
               <StyledSectionHeader ref={hoverDS}>Data Science {isDSHovered && 
                   <div className='ds-icons'><DsIcons /></div>}
               </StyledSectionHeader>
@@ -77,12 +82,14 @@ const Tldr = () => {
                   <div className='do-icons'><DoIcons /></div>}
               </StyledSectionHeader>
               <DevOps />
-            <StyledSectionHeader>Projects</StyledSectionHeader>
+            <StyledSectionHeader id='projects'>Projects</StyledSectionHeader>
                     <StyledProjectTitle><Projects /></StyledProjectTitle>
                     
-            <StyledSectionHeader>Professional Experience</StyledSectionHeader>  
+            <StyledSectionHeader id='exp'>Professional Experience</StyledSectionHeader>
+            <Experience />  
                   
-
+            <StyledSectionHeader id="edu">Education</StyledSectionHeader>
+            <Education /> 
 
         </div>
     );

@@ -8,6 +8,10 @@
   z-index:2;
 }
 
+ul {
+  list-style:none
+}
+
 .social-buttons-home {
   background:black;
   grid-area:SocialButtons;
@@ -83,12 +87,82 @@
   align-items:center;
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
+  grid-auto-columns: min-content;
   text-align:center;
   justify-content:center;
+  flex-shrink:5;
 }
 .tldr-page {
   letter-spacing: 0px;
+  max-width:750px;
+  justify-content: center;
+  display:grid;
+  margin-left:auto;
+  margin-right:auto;
+  
 }
+h4 {
+  margin-left:25px;
+}
+.tldr-nav {
+  align-items:center;
+  justify-content: space-between;
+}
+.tldr-list {
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+}
+.tldr-list li {
+  padding:15px;
+  font-weight:bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.meths {
+  justify-content: center;
+  background:silver;
+  border:1px solid black;
+  box-shadow: 16px 4px 8px 8px rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align:left;
+  color:black;
+}
+.meths:hover {
+  box-shadow: 16px 16px 100px 20px rgba(255, 255, 255, 0.452);
+}
+.langframe {
+  text-align:left;
+  justify-content: center;
+  background:silver;
+  border:1px solid black;
+  color:black;
+  align-items:center;
+  box-shadow: 16px 4px 8px 8px rgba(0,0,0,0.2);
+
+}
+.langframe:hover {
+  box-shadow: 16px 16px 100px 20px rgba(255, 255, 255, 0.452);
+}
+.ml:hover {
+  box-shadow: 16px 16px 100px 20px rgba(255, 255, 255, 0.452);
+}
+.ml {
+  justify-content: center;
+  background:silver;
+  border:1px solid black;
+  box-shadow: 16px 4px 8px 8px rgba(0,0,0,0.2);
+  color:black;
+}
+.meth-label {
+  text-align:left;
+}
+
 .project1 {
   align-items:center;
   display:grid;
@@ -105,32 +179,36 @@
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-  "PhoneMail NameText .";
+  "PhoneMail Name INFO";
 }
 .info {
-  grid-area:text;
-  max-width:200px;
+  grid-area:INFO;
+  max-width:300px;
 
 }
+ul {
+  list-style:none
+}
 .basics-body {
-    text-align:center;
+  
 
 }
 .name-avatar {
   display:grid;
   grid-template-columns:1fr 1fr;
   grid-template-areas: 
-  "pic text";
+  "pic Text";
 }
 .avatar {
-  grid-area: pic;
+  grid-area: Name;
   max-width:200px;
 }
 .phonemail {
   grid-area:PhoneMail;
   display:grid;
-  align-content: flex-end;
+  align-content: center;
   justify-content: flex-end;
+  margin-right:15px;
 }
 
 .basics {

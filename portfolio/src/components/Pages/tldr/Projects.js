@@ -5,19 +5,13 @@ import pdxcrime from './icons/pdxcrime.png'
 import resto from './icons/resto.png'
 import math from './icons/math.png'
 import useHover from '../../popup/useHover'
+import ReactTooltip from "react-tooltip";
 
 import { StyledProjectTitle, ProjectDetail, LinkSet } from './Projects.styled'
 
 
 
 const Projects = () => {
-    const [hoverPDXsite, isPDXsiteHovered] = useHover()
-    const [hoverPDXcode, isPDXcodeHovered] = useHover()
-    const [hoverResSite, isResSiteHovered] = useHover()
-    const [hoverResCode, isResCodeHovered] = useHover()
-    const [hoverMathSite, isMathSiteHovered] = useHover()
-    const [hoverMathCode, isMathCodeHovered] = useHover()
-    const [hoverMathMed, isMathMedHovered] = useHover()
 
     return (
         <div className='tldr-projects'>
@@ -30,14 +24,17 @@ const Projects = () => {
                     tweets in a cloud SQL database, hosting that data via custom API,
                     and visualizing that data through a custom dashboard.
                     <LinkSet>                    
-                            <a ref={hoverPDXsite} href='http://pdxcrimemap.net' rel="noopener noreferrer">
-                            {isPDXsiteHovered && <div>Go to Site</div>}
-                                <img src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' width='35px'></img>
-                            </a>
-                            <a ref={hoverPDXcode} className='pdx-code' href='https://github.com/ExtraLime/pdx-crime-maps' rel="noopener noreferrer">
-                            {isPDXcodeHovered && <div>Go to Code</div>}    
-                                <img src='https://symbols.getvecta.com/stencil_130/1_code-editor.a52671ab74.svg' width='35px'></img>
-                            </a>
+                            <a target='_blank' rel="noopener noreferrer" href='http://pdxcrimemap.net' rel="noopener noreferrer" data-tip data-for='pdx-site'>
+                                 <img src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='pdx-site' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Site</span>
+                            </ReactTooltip>
+
+                            <a target='_blank' rel="noopener noreferrer" data-tip data-for='pdx-code' href='https://github.com/ExtraLime/pdx-crime-maps'>
+                                 <img src='https://symbols.getvecta.com/stencil_130/1_code-editor.a52671ab74.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='pdx-code' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Code</span>
+                            </ReactTooltip>
                         </LinkSet>
                     </ProjectDetail>
                 </div>
@@ -51,14 +48,23 @@ const Projects = () => {
                         restaurant. This project combines advanced API calls and data manipulation
                          as well as advanced mapping techniques.
                          <LinkSet>                    
-                            <a ref={hoverResSite} href='http://pdxcrimemap.net' rel="noopener noreferrer">
-                            {isResSiteHovered && <div>Go to Site</div>}
-                                <img src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' width='35px'></img>
-                            </a>
-                            <a ref={hoverResCode} className='pdx-code' href='http://pdxcrimemap.net' rel="noopener noreferrer">
-                            {isResCodeHovered && <div>Go to Code</div>}    
-                                <img src='https://symbols.getvecta.com/stencil_130/1_code-editor.a52671ab74.svg' width='35px'></img>
-                            </a>
+                            <a target='_blank' rel="noopener noreferrer" data-tip data-for='res-site' href='https://slides.com/will-m/opening-a-restaurant-in-portland-or/#/'>
+                                 <img src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='res-site' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Presentation</span>
+                            </ReactTooltip>
+                            
+                            <a target='_blank' rel="noopener noreferrer"  data-tip data-for='res-code' href='https://github.com/ExtraLime/Coursea_Capstone'>
+                                 <img src='https://symbols.getvecta.com/stencil_130/1_code-editor.a52671ab74.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='res-code' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Code</span>
+                            </ReactTooltip>
+                            <a target='_blank' rel="noopener noreferrer"  data-tip data-for='res-nb' href='https://nbviewer.jupyter.org/github/ExtraLime/Coursea_Capstone/blob/master/pdx_final.ipynb'>
+                                 <img src='https://symbols.getvecta.com/stencil_85/56_jupyter-icon.a458834856.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='res-nb' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Notebook</span>
+                            </ReactTooltip>
+                            
                         </LinkSet>
                     </ProjectDetail>
                 </div></a>
@@ -70,19 +76,24 @@ const Projects = () => {
                      The project explores multiple approaches to multi-class text classification while
                      emplying multiple methods of dimensionality reduction to visualize the results.
                      <LinkSet>                    
-                            <a ref={hoverMathSite} href='http://pdxcrimemap.net' rel="noopener noreferrer">
-                            {isMathSiteHovered && <div>Go to Site</div>}
-                                <img src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' width='35px'></img>
-                            </a>
-                            <a ref={hoverMathCode} className='pdx-code' href='http://pdxcrimemap.net' rel="noopener noreferrer">
-                            {isMathCodeHovered && <div>Go to Code</div>}    
-                                <img src='https://symbols.getvecta.com/stencil_130/1_code-editor.a52671ab74.svg' width='35px'></img>
-                            </a>
-                            <a ref={hoverMathMed} className='pdx-code' href='http://pdxcrimemap.net' rel="noopener noreferrer">
-                            {isMathMedHovered && <div>Go to Medium Article</div>}    
-                                <img src='https://symbols.getvecta.com/stencil_88/67_medium-tile.012d359ed6.svg' width='35px'></img>
-                            </a>
-                        </LinkSet> 
+                            <a target='_blank' rel="noopener noreferrer" href='https://slides.com/will-m/deck#/' rel="noopener noreferrer" data-tip data-for='math-site'>
+                                 <img src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='math-site' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Presentation</span>
+                            </ReactTooltip>
+
+                            <a target='_blank' rel="noopener noreferrer" data-tip data-for='math-code' href='https://github.com/ExtraLime/math_lectures2'>
+                                 <img src='https://symbols.getvecta.com/stencil_130/1_code-editor.a52671ab74.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='math-code' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Code</span>
+                            </ReactTooltip>
+                            
+                            <a target='_blank' rel="noopener noreferrer"  data-tip data-for='math-med' href='https://medium.com/@morga046/multi-class-text-classification-with-doc2vec-and-t-sne-a-full-tutorial-55eb24fc40d3'>
+                                 <img src='https://symbols.getvecta.com/stencil_88/67_medium-tile.012d359ed6.svg' height='30px' width='30px'></img></a>
+                            <ReactTooltip id='math-med' place='bottom' color='dodgerblue' effect='solid'>
+                            <span>Go to Medium Article</span>
+                            </ReactTooltip>
+                        </LinkSet>
                     </ProjectDetail>
             </div>
         </div>

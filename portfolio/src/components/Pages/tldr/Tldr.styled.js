@@ -2,7 +2,13 @@ import styled from 'styled-components'
 
 export const StyledIntro = styled.p`
     font-weight:nornal;
-    letter-spacing:1px;`
+    letter-spacing:1px;
+    max-width:300px;
+    margin:auto;
+    background-color:silver;
+    border-radius:10%;
+    padding:10px;
+    border-style:ridge;`
 
 export const StyledSectionHeader = styled.h3`
     color:dodgerblue;
