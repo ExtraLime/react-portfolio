@@ -86,7 +86,6 @@ ul {
 .tldr-projects {
   align-items:center;
   display:grid;
-  grid-template-columns:1fr 1fr 1fr;
   grid-auto-columns: min-content;
   text-align:center;
   justify-content:center;
@@ -136,6 +135,10 @@ h4 {
 .meths:hover {
   box-shadow: 16px 16px 100px 20px rgba(255, 255, 255, 0.452);
 }
+.meths:hover h4{
+  color:white;
+  font-weight:bolder;
+}
 .langframe {
   text-align:left;
   justify-content: center;
@@ -149,8 +152,16 @@ h4 {
 .langframe:hover {
   box-shadow: 16px 16px 100px 20px rgba(255, 255, 255, 0.452);
 }
+.langframe:hover h4{
+  color:white;
+  font-weight:bolder;
+}
 .ml:hover {
   box-shadow: 16px 16px 100px 20px rgba(255, 255, 255, 0.452);
+}
+.ml:hover h4{
+  color:white;
+  font-weight:bolder;
 }
 .ml {
   justify-content: center;
@@ -175,6 +186,9 @@ h4 {
   letter-spacing:0px;
   font-weight:bold;
 }
+.ds-info h4 {
+  font-size:16px;
+}
 .name-info {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -189,8 +203,9 @@ h4 {
 ul {
   list-style:none
 }
-.basics-body {
-  
+.tldr-projects {
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
 
 }
 .name-avatar {
@@ -257,4 +272,102 @@ ul {
   background:black;
   grid-area:SocialButtons;
 }
+.stnc-grid {
+  display:flex;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:  
+  "Logo CInfo";
+  align-content: center;
+  overflow: hidden;
+  width: 100%;  
+}
+.s3c-grid {
+  display:flex;
+  align-content: center;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:  
+  "Logo CInfo";
+  width: 100%;  
+}
+
+.clogo {
+  grid-area:Logo;  
+  float:left;
+
+}
+.company {
+  grid-area:CInfo;
+  font-size:24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.location {
+  font-size:18px;
+  grid-area:LInfo;
+}
+.position {
+  text-align:left;
+}
+
+.duties {
+  list-style: outside;
+  max-width:600px;
+}
+.date-span {
+  float:right;
+  align-content:right;
+  grid-area:Dates;
+  height:25px;
+}
+.stnc-info {
+  grid-area:CInfo;
+  overflow: hidden;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+  padding:20px 0px 40px 0px;
+}
+.s3c-info {
+  grid-area:CInfo;
+  overflow: hidden;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+  padding:20px 0px 40px 0px;
+}
+.op-info {
+  grid-area:CInfo;
+  overflow: hidden;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+ 
+}
+.op-grid {
+  display:flex;
+  align-content: center;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:  
+  "Logo CInfo";
+  width: 100%;  
+}
+.wells-info {
+  grid-area:CInfo;
+  overflow: hidden;
+  justify-content:center;
+  text-align:center;
+  width:100%;
+ 
+}
+.wells-grid {
+  display:flex;
+  align-content: center;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:  
+  "Logo CInfo";
+  width: 100%;  
+}
+
 }

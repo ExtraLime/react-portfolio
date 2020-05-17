@@ -4,7 +4,6 @@ import { ProjectImg } from './Projects.styled'
 import pdxcrime from './icons/pdxcrime.png'
 import resto from './icons/resto.png'
 import math from './icons/math.png'
-import useHover from '../../popup/useHover'
 import ReactTooltip from "react-tooltip";
 
 import { StyledProjectTitle, ProjectDetail, LinkSet } from './Projects.styled'
