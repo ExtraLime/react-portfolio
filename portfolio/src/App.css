@@ -177,8 +177,8 @@ h4 {
 .project1 {
   align-items:center;
   display:grid;
-  text-emphasis: wrap;
-  max-width: 33%;
+ 
+
 }
 .ds-info {
   display:grid;
@@ -190,10 +190,11 @@ h4 {
   font-size:16px;
 }
 .name-info {
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display:flex;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas: 
-  "PhoneMail Name INFO";
+  "Name INFO";
+  justify-content:center;
 }
 .info {
   grid-area:INFO;
@@ -206,6 +207,7 @@ ul {
 .tldr-projects {
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
+  margin-bottom:20px;
 
 }
 .name-avatar {
@@ -217,12 +219,16 @@ ul {
 .avatar {
   grid-area: Name;
   max-width:200px;
+  align-items:flex-end;
+  justify-content: flex-end;
+  overflow:hidden;
+  float:right;
 }
 .phonemail {
   grid-area:PhoneMail;
-  display:grid;
+  display:flex;
   align-content: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-right:15px;
 }
 
@@ -296,6 +302,9 @@ ul {
   float:left;
 
 }
+.fcc li {
+  font-size:12px;
+}
 .company {
   grid-area:CInfo;
   font-size:24px;
@@ -318,6 +327,13 @@ ul {
   align-content:right;
   grid-area:Dates;
   height:25px;
+  padding-top:20px;
+}
+.project2 {
+  width:300px;
+  padding:0px 25px 0px 25px;
+
+
 }
 .stnc-info {
   grid-area:CInfo;
@@ -368,6 +384,51 @@ ul {
   grid-template-areas:  
   "Logo CInfo";
   width: 100%;  
+}
+.edu-name {
+  font-size:24px;
+}
+.degree {
+  font-size:16px;
+}
+.focus {
+  font-size:12px;
+}
+.education {
+  overflow: hidden;
+  width:100%;
+  text-align:center;
+  display:grid;
+  grid-template-areas: 
+  "CSUSM"
+  "Thinkful"
+  "FCC";
+  
+}
+.csusm {
+  grid-area:CSUSM;
+  display:flex;
+  margin-bottom:25px;  
+}
+.fcc {
+  grid-area:FCC;
+  display:flex;
+    
+}
+.thinkful {
+  grid-area:Thinkful;
+  display:flex;
+  margin-bottom:25px;  
+}
+.tldr-header {
+  margin:40px 0px 15px 0px;
+  border-radius:40%;
+}
+#title {
+  margin-bottom:5px;
+}
+#skills {
+  margin-bottom:0px;
 }
 
 }

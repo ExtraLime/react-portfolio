@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledBasics } from "./Tldr.styled"
+
 
 const WebDev = () => {
     return (

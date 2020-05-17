@@ -18,13 +18,13 @@ const Menu = () => {
     <div ref={node}>    
       <StyledMenu open={open}>
         <StyledImg id='menu-pic' src={willabjsmall} alt='profile-pic'></StyledImg>
-        <StyledLink onClick={() => close()}><NavLink to="/">Home</NavLink></StyledLink>
-        <StyledLink onClick={() => close()}><NavLink to="/about">About</NavLink></StyledLink>
-        <StyledLink onClick={() => close()}><NavLink to="/tldr">tl;dr</NavLink></StyledLink>
-        <StyledLink onClick={() => close()}><NavLink to="/projects">Projects</NavLink></StyledLink>
-        <StyledLink onClick={() => close()}><NavLink to="/work">Experience</NavLink></StyledLink>
-        <StyledLink onClick={() => close()}><NavLink to="/edu">Education</NavLink></StyledLink>
-        <StyledLink onClick={() => close()}><NavLink to="/contact">Contact</NavLink></StyledLink>
+        <NavLink onClick={() => close()} to="/">Home</NavLink>
+        <NavLink onClick={() => close()} to="/about">About</NavLink>
+        <NavLink onClick={() => close()} to="/tldr">tl;dr</NavLink>
+        <NavLink onClick={() => close()} to="/projects">Projects</NavLink>
+        <NavLink onClick={() => close()} to="/work">Experience</NavLink>
+        <NavLink onClick={() => close()} to="/edu">Education</NavLink>
+        <NavLink onClick={() => close()} to="/contact">Contact</NavLink>
         <SocialButtonGroup label='menu'></SocialButtonGroup> 
       </StyledMenu>
         

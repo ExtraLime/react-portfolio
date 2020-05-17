@@ -27,13 +27,17 @@ export const StyledMenu = styled.nav`
     color: ${({ theme }) => theme.primaryDark};
     text-decoration: none;
     transition: color 0.3s linear;
+    margin:5px 0px 10px 0px;
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
       text-align: center;
+      
     }
     &:hover {
       color: ${({ theme }) => theme.primaryHover};
+    
     }
+
     
   }
 `;

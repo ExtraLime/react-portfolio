@@ -1,13 +1,8 @@
 import React from 'react';
 import useHover from '../../popup/useHover'
 import {
-  StyledIntro,
-  StyledSection,
-  StyledBasics,
-  StyledPic,
   StyledSectionHeader,
   StyledProjectTitle,
-  DsBit
 } from './Tldr.styled'
 
 import DsIcons from './icons/DsIcons'
@@ -25,12 +20,10 @@ const Tldr = () => {
   const [hoverDS, isDSHovered] = useHover();
   const [hoverWD, isWDHovered] = useHover()
   const [hoverDO, isDOHovered] = useHover()
-  const [hoverPhone, isPHHovered] = useHover()
-  const [hoverMail, isMailHovered] = useHover()
 
   return (
     <div className='tldr-page'>
-      <h1>TL;DR</h1>
+      <h1 className='tldr-header' id='title'>TL;DR</h1>
       <nav className='tldr-nav'>
         <ul className='tldr-list'>
           <a href='#basics'><li>Basics</li></a>
@@ -41,10 +34,10 @@ const Tldr = () => {
         </ul>
       </nav>
       <div id='basics' className='basics'>
-        <h1>Basics</h1>
+      <h1 className='tldr-header' id='Basics'>Basics</h1>
         <Basics />
       </div>
-      <h1 id='skills'>Skills</h1>
+      <h1 className='tldr-header' id='skills'>Skills</h1>
       <StyledSectionHeader ref={hoverDS}>Data Science {isDSHovered &&
         <div className='ds-icons'><DsIcons /></div>}
       </StyledSectionHeader>
@@ -57,13 +50,13 @@ const Tldr = () => {
         <div className='do-icons'><DoIcons /></div>}
       </StyledSectionHeader>
       <DevOps />
-      <h1 id='projects'>Projects</h1>
+      <h1 className='tldr-header' id='projects'>Projects</h1>
       <StyledProjectTitle>
         <Projects />
       </StyledProjectTitle>
-      <h1 id='exp'>Professional Experience</h1>
+      <h1 className='tldr-header' id='exp'>Professional Experience</h1>
       <Experience />
-      <h1 id="edu">Education</h1>
+      <h1 className='tldr-header' id="edu">Education</h1>
       <Education />
 
     </div>

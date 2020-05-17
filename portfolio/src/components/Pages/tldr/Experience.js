@@ -1,27 +1,26 @@
 import React from 'react'
 import s3c from './icons/s3c.png'
 import stnc from './icons/logo-stnc.png'
-import { DateSpan, Position, Duties, Duty } from './Experience.styled'
 
 const Experience = () => {
     return (
         <div className='experience'>
             <div className='current'>
                 <p className='date-span'>April 2018-Present</p>
-                <div classname='current-text'></div>
+                <div className='current-text'></div>
                 <article>
                     Independent Consultant for Efficiency Solutions and International Trade	April 2018 – Present
                     Consulting for Cashew Factories
                     • Offer effective guidance to newly established cashew processing plants around the world.
                     Broker
                     • As part of the consultancy, brokered machine and part sales totaling over USD 5,000,000.
-                            Delpoyed <a target='_blank' href='https://www.eurodesign.info'>EuroDesign.info</a>
+                            Delpoyed <a rel="noopener noreferrer" target='_blank' href='https://www.eurodesign.info'>EuroDesign.info</a>
                 </article>
             </div>
             <div className='stnc'>
                 <div><p className='date-span'>August 2016 – April 2018</p></div>
                 <div className='stnc-grid'>
-                    <div className="clogo"><img src={stnc} alt="logo stnc" width="170" height="100"></img></div>
+                    <div className="clogo"><a rel="noopener noreferrer" target='_blank' href='https://stnc-ci.com/'><img src={stnc} alt="logo stnc" width="170" height="100"></img></a></div>
                     <div className='stnc-info'>
                         <p className='company'>STNC-CI (S3C Group)</p>
                         <p className='location'>Abidjan, Côte d’Ivoire </p>
@@ -39,8 +38,6 @@ const Experience = () => {
                         <li>Spearheaded the development and execution of the installation of a 10,000 MT per year cashew processing facility.</li>
                         <li>Converted empty warehouses into a BRC certified food processing facility in 8 months; ahead of schedule by two months and 15% under budget.</li>
                     </ul>
-                    <a target='_blank' href='https://stnc-ci.com/'>STNC-CI</a>
-
                 </article>
             </div>
             <div className='s3c'>
@@ -71,7 +68,7 @@ const Experience = () => {
             <div className='onpoint'>
                 <div><p className='date-span'>November 2012 – June 2014</p></div>
                 <div className='op-grid'>
-                    <div className="clogo"><a target='_blank' href='https://www.onpointcu.com'><img src="https://www.onpointcu.com/wp-content/themes/onpointcu-theme/images/OnPoint_logo.svg" alt="logo onpoint" width="200" height="60"></img></a></div>
+                    <div className="clogo"><a rel="noopener noreferrer" target='_blank' href='https://www.onpointcu.com'><img src="https://www.onpointcu.com/wp-content/themes/onpointcu-theme/images/OnPoint_logo.svg" alt="logo onpoint" width="200" height="60"></img></a></div>
                     <div className='op-info'>
                         <p className='company'>OnPoint Community Credit Union</p>
                         <p className='location'>Portland, OR</p>
@@ -98,7 +95,7 @@ const Experience = () => {
             <div className='wells'>
                 <div><p className='date-span'>July 2011 – June 2012</p></div>
                 <div className='wells-grid'>
-                    <div className="clogo"><a target='_blank' href='https://www.wellsfargo.com'><img src="https://symbols.getvecta.com/stencil_101/44_wells-fargo-icon.7009538bf1.svg" alt="logowf" width="150" height="100"></img></a></div>
+                    <div className="clogo"><a rel="noopener noreferrer" target='_blank' href='https://www.wellsfargo.com'><img src="https://symbols.getvecta.com/stencil_101/44_wells-fargo-icon.7009538bf1.svg" alt="logowf" width="150" height="100"></img></a></div>
                     <div className='wells-info'>
                         <p className='company'>Wells Fargo N.A.</p>
                         <p className='location'>Portland, OR</p>
