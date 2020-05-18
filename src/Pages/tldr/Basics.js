@@ -1,14 +1,19 @@
 import React from 'react'
 import useHover from '../../popup/useHover'
-import profile from './profile.jpeg'
 
 const Basics = () => {
   const [hoverPhone, isPHHovered] = useHover()
   const [hoverMail, isMailHovered] = useHover()
   return (
     <div className='basics-body'>
+         <div style={{ textAlign: 'center' }} className='info'>
+          <h2>William Morgan</h2>
+          <h5>32 years old</h5>
+          <h5>Portland, Oregon</h5>
+          <h5>Data Scientist </h5>
+          <h5>Full Stack Engineer</h5>
+        </div>
       <div className='name-info'>
-        <div className='avatar'><img alt='something' style={{ borderRadius: '30%', margin: '0px', justifyContent: 'center' }} width='150px' src={profile}></img>
           <div className='phonemail'>
             <div ref={hoverPhone} >
               <img alt="phoneicon" src='https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-phone.svg' height="35px"></img>{isPHHovered &&
@@ -22,15 +27,6 @@ const Basics = () => {
 
             </a>
           </div>
-        </div>
-        <div style={{ textAlign: 'left' }} className='info'>
-          <h4>William Morgan</h4>
-          <h4>32 years old</h4>
-          <h4>Portland, Oregon</h4>
-          <h4>Data Scientist </h4>
-          <h4>Full Stack Engineer</h4>
-        </div>
-
       </div>
     </div>
   )

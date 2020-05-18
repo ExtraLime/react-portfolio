@@ -1,21 +1,42 @@
 import React from 'react'
 import s3c from './icons/s3c.png'
 import stnc from './icons/logo-stnc.png'
+import openclose from './icons/openclose.svg'
+import cargo from './icons/cargo.svg'
 
 const Experience = () => {
     return (
         <div className='experience'>
             <div className='current'>
                 <p className='date-span'>April 2018-Present</p>
-                <div className='current-text'></div>
+                <div className='current-grid'>
+                <div className="clogo-cont">
+                    <a rel="noopener noreferrer" target='_blank' href='https://github.com/ExtraLime'>
+                        <img src={openclose} alt="logo uber" width="120" height="70"></img>
+                        </a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://stnc-ci.com'>
+                        <img src={cargo}alt="logo lyft" width="120" height="70"></img>
+                        </a>
+                    <a rel="noopener noreferrer" target='_blank' href='https://lyft.com'>
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyft_logo.svg' alt="logo uber" width="120" height="70"></img>
+                        </a>
+                    </div>
                 <article>
-                    Independent Consultant for Efficiency Solutions and International Trade	April 2018 – Present
-                    Consulting for Cashew Factories
-                    • Offer effective guidance to newly established cashew processing plants around the world.
-                    Broker
-                    • As part of the consultancy, brokered machine and part sales totaling over USD 5,000,000.
-                            Delpoyed <a rel="noopener noreferrer" target='_blank' href='https://www.eurodesign.info'>EuroDesign.info</a>
+                <p className='position'>Free Lance  Development</p>
+                <ul className='duties'>
+                <li>Currently I build websites, deploy cloud SQL databases, generate brilliant visualizations and write scripts for digitalizing documents.</li>
+                <li>Frequent <a href='https://www.codewars.com/users/ExtraLime' target='_blank' rel='noopener noreferer'>code warrior</a>
+                <a href='https://www.kaggle.com/extralime' target='_blank' rel='noopener noreferer'>kaggler</a>, and
+                <a href='https://www.kaggle.com/extralime/datasets' target='_blank' rel='noopener noreferer'>dataset contributor.</a></li>
+                <li>Recently deployed <a target='_blank' rel='noopener noreferer' href='https://www.eurodesign.info'>EuroDesign</a></li>
+                </ul>
+                <p className='position'>Independant Consultant for International Trade</p>
+                <ul className='duties'>
+                <li>Provide effective guidance to newly established cashew processing plants around the world.</li>
+                <li>As part of the consultancy, brokered machine and part sales totaling over USD 5,000,000.</li>
+                </ul>
                 </article>
+                </div>
             </div>
             <div className='stnc'>
                 <div><p className='date-span'>August 2016 – April 2018</p></div>
@@ -53,7 +74,8 @@ const Experience = () => {
                     <p className='position'>Director of Trade Analytics</p>
                     <ul className='duties'>
                         <li>Negotiated and executed multimillion-dollar contracts with international partners.</li>
-                        <li>Developed expertise in procedures concerning international trade including international banking, documentary credit, and international shipping, managed product stocks valued at over USD 7,000,000.00 and produced a turnover of USD 12,000,000.00 annually for the cashew division.</li>
+                        <li>Developed expertise in procedures concerning international trade including international banking, documentary credit, and international shipping</li>
+                        <li> managed product stocks valued at over USD 7,000,000.00 and produced a turnover of USD 12,000,000.00 annually for the cashew division.</li>
                     </ul>
                     <p className='position'>Director of Research and Development</p>
                     <ul className='duties'>
@@ -63,8 +85,6 @@ const Experience = () => {
                     </ul>
                 </article>
             </div>
-
-
             <div className='onpoint'>
                 <div><p className='date-span'>November 2012 – June 2014</p></div>
                 <div className='op-grid'>

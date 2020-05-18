@@ -5,7 +5,6 @@ import linkedin from './linkedin.svg'
 import kaggle from './kaggle.svg'
 import github from './github.svg'
 import codewars from "./codewars.svg"
-import reddit from "./reddit.svg"
 import medium from "./medium.svg"
 import sover from "./sover.svg"
 import twitter from "./twitter.svg"
@@ -30,7 +29,7 @@ const SocialButtonGroup = (label) => {
               <StyledIcon src={kaggle}></StyledIcon>
             </ImgLink>
             <ImgLink target="_blank" href='https://www.google.com'>
-              <StyledIcon src={reddit}></StyledIcon>
+              <StyledIcon src='https://symbols.getvecta.com/stencil_65/26_reddit.bd713287eb.svg'></StyledIcon>
             </ImgLink>
             <ImgLink target="_blank" href='https://www.google.com'>
               <StyledIcon src={codewars}></StyledIcon>

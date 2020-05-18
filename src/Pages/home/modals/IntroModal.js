@@ -1,18 +1,18 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
-import { Root, Overlay, Dialog, StyledLink, StyledText, LinkSet, CloseButton,StyledRow } from './IntroModal.styled'
+import { Root, Overlay, Dialog, StyledLink, StyledText, StyledText1, LinkSet, CloseButton,StyledRow, St2 } from './IntroModal.styled'
 
 const IntroModal = (props) => {
  
     console.log(props)
     
-  return (
+  return ( 
         <Root>
             <Overlay>
                 <Dialog>
                     <CloseButton onClick={() => props.onClose()}>X</CloseButton>
-                    <StyledText>Short On Time?</StyledText>
-                    <p>Check Out the TL;DR page!</p>
+                    <StyledText1>Short On Time?</StyledText1>
+                    <St2>Check Out the TL;DR page!</St2>
                     <StyledText>Otherwise</StyledText>
                     <p>Click Continue!</p>
                     <LinkSet>

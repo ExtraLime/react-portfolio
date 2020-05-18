@@ -23,10 +23,8 @@ const Tldr = () => {
 
   return (
     <div className='tldr-page'>
-      <h1 className='tldr-header' id='title'>TL;DR</h1>
       <nav className='tldr-nav'>
-        <ul className='tldr-list'>
-          <a href='#basics'><li>Basics</li></a>
+        <ul className='tldr-list'> 
           <a href='#skills'><li>Skills</li></a>
           <a href='#projects'><li>Projects</li></a>
           <a href='#exp'><li>Experience</li></a>
@@ -34,7 +32,6 @@ const Tldr = () => {
         </ul>
       </nav>
       <div id='basics' className='basics'>
-      <h1 className='tldr-header' id='Basics'>Basics</h1>
         <Basics />
       </div>
       <h1 className='tldr-header' id='skills'>Skills</h1>

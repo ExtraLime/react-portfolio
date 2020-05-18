@@ -22,7 +22,7 @@ const Projects = () => {
                     <ProjectDetail>Do you live in PDX? Check out your neighborhood!
                     A webapp that combines capturing and warehousing streaming
                     tweets in a cloud SQL database, hosting that data via custom API,
-                    and visualizing that data through a custom dashboard.
+                    and visualizing that data through a custom dashboard. Built with ReactJS and ExpressJS
                     <LinkSet>                    
                             <a target='_blank' href='http://pdxcrimemap.net' rel="noopener noreferrer" data-tip data-for='pdx-site'>
                                  <img alt='button-link' src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
@@ -41,7 +41,7 @@ const Projects = () => {
             
             
                 <div className='project2'>
-                <a target='_blank' href='http://pdxcrimemap.net' rel="noopener noreferrer">
+                <a target='_blank' href='https://slides.com/will-m/opening-a-restaurant-in-portland-or/#/' rel="noopener noreferrer">
                     <ProjectImg src={resto} style={{ borderRadius: '30%' }}></ProjectImg></a>
                     <StyledProjectTitle>Opening a Restaurant</StyledProjectTitle>
                     <ProjectDetail>A data science project that applies statiscal techniques to 
@@ -70,12 +70,11 @@ const Projects = () => {
                     </ProjectDetail>
                 </div>
             <div className='project3'>
-                <ProjectImg style={{ borderRadius: '30%' }} src={math}></ProjectImg>
+            <a target='_blank' href='https://slides.com/will-m/deck#/' rel="noopener noreferrer">
+                <ProjectImg style={{ borderRadius: '30%' }} marginTop='5px' hieght='30px' src={math}></ProjectImg></a>
                 <StyledProjectTitle>Classifying Math Lectures</StyledProjectTitle>
-                <ProjectDetail>A scalabe data science project which programatticaly scrapes
-                     subtitles from youtube videos and classifies each lecture into a subject category.
-                     The project explores multiple approaches to multi-class text classification while
-                     emplying multiple methods of dimensionality reduction to visualize the results.
+                <ProjectDetail>A data science project that uses machine learning techniques to and compare multiple approaches and models for
+                                 multi-class text classification. Applying dimensionality reduction to produce and visualize a stunningly accurate a model.
                      <LinkSet>                    
                             <a target='_blank' rel="noopener noreferrer" href='https://slides.com/will-m/deck#/' data-tip data-for='math-site'>
                                  <img alt='button-link' src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>

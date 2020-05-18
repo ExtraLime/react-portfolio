@@ -67,6 +67,16 @@ color:white;
 font-weight:bold;
 `;
 
+export const StyledText1 = styled.h2`
+color:white;
+font-weight:bold;
+`;
+
+export const St2 = styled.h4`
+color:black;
+font-weight:bold;
+`;
+
 export const LinkSet = styled.div`
 display:flex;
 justify-content:center;

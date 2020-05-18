@@ -16,6 +16,9 @@ ul {
   background:black;
   grid-area:SocialButtons;
 }
+.social-buttons-home a {
+margin:20px;
+}
 .tooltip {
   position: relative;
   display: inline-block;
@@ -63,19 +66,13 @@ ul {
 
   /* media queries */
 @media screen and (min-width: 750px) {
-.home {
-    display: absolute;    
-    justify-content: center;
-    align-items: center;
-    height: 100vh;    
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
-}
+
 .connect {
   grid-area:Connect;
 }
 #connect:hover {
   color:dodgerblue;
+  background-color:transparent;
 }
 #gotit {
   color:rgb(52, 1, 82)
@@ -176,7 +173,8 @@ h4 {
 
 .project1 {
   align-items:center;
-  display:grid;
+  
+  max-width:275px;
  
 
 }
@@ -197,9 +195,8 @@ h4 {
   justify-content:center;
 }
 .info {
-  grid-area:INFO;
-  max-width:300px;
-
+display:inline-block;
+flex-direction:column-reverse;
 }
 ul {
   list-style:none
@@ -235,7 +232,7 @@ ul {
 .basics {
   display:flex;
   flex-direction:column;
-  max-height:400px;
+  margin-top:5px;
 }
 .social-menu {
   display:inline-block;
@@ -255,9 +252,13 @@ ul {
 }
 
 .social-socialmodal {
-  background:silver;
-  border-radius:5%;
+  background:black;
+  border-radius:5%;  
 }
+.social-socialmodal a {
+margin:10px  
+}
+
 .home-page {
   color:white;
   display:grid;  
@@ -311,8 +312,9 @@ ul {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .location {
-  font-size:18px;
+  font-size:14px;
   grid-area:LInfo;
+  font-weight:8px;
 }
 .position {
   text-align:left;
@@ -320,7 +322,7 @@ ul {
 
 .duties {
   list-style: outside;
-  max-width:600px;
+  max-width:750px;
 }
 .date-span {
   float:right;
@@ -330,7 +332,7 @@ ul {
   padding-top:20px;
 }
 .project2 {
-  width:300px;
+  width:275px;
   padding:0px 25px 0px 25px;
 
 
@@ -341,7 +343,7 @@ ul {
   justify-content:center;
   text-align:center;
   width:100%;
-  padding:20px 0px 40px 0px;
+  padding:20px 0px 5px 0px;
 }
 .s3c-info {
   grid-area:CInfo;
@@ -349,7 +351,8 @@ ul {
   justify-content:center;
   text-align:center;
   width:100%;
-  padding:20px 0px 40px 0px;
+  padding:20px 0px 5px 0px;
+
 }
 .op-info {
   grid-area:CInfo;
@@ -357,7 +360,7 @@ ul {
   justify-content:center;
   text-align:center;
   width:100%;
- 
+  padding:20px 0px 5px 0px;
 }
 .op-grid {
   display:flex;
@@ -368,13 +371,32 @@ ul {
   "Logo CInfo";
   width: 100%;  
 }
+.clogo-cont {
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-area:LOGOS;
+}
+.current-text {
+  grid-area:TEXT1;
+}
+.current-grid {
+  display:flex;
+  align-content: center;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "LOGOS TEXT1";
+  width:100%;
+}
+
 .wells-info {
   grid-area:CInfo;
   overflow: hidden;
   justify-content:center;
   text-align:center;
   width:100%;
- 
+  padding:20px 0px 5px 0px;
 }
 .wells-grid {
   display:flex;
@@ -420,15 +442,26 @@ ul {
   display:flex;
   margin-bottom:25px;  
 }
-.tldr-header {
-  margin:40px 0px 15px 0px;
-  border-radius:40%;
+
+.tldr-nav {
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.tldr-nav ul {
+  margin:0px;
 }
 #title {
-  margin-bottom:5px;
+  margin-bottom:0px;
+  margin-top:5px;
 }
 #skills {
-  margin-bottom:0px;
+  margin-top:20px;
+}
+#basics {
+  margin-top:0px;
+}
+.basics.body {
+  display:flex;
 }
 
 }
