@@ -1,5 +1,5 @@
 import React from 'react';
-import useHover from '../../components/popup/useHover'
+import { NavLink } from 'react-router-dom'
 
 import Skills from './Skills'
 import Projects from './Projects'
@@ -13,12 +13,22 @@ const Tldr = () => {
 
   return (
     <div className='tldr-page'>
-      <div className='resLink'><h6 style={{textAlign:'right',marginTop:'10px'}}>Looking for a file/paper resume?</h6></div>
+      <div className='resLink'><h6 style={{textAlign:'right',marginTop:'10px'}}>Looking for a resume?<a target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1Y3DyQ2scrdwkbHY9ufcTcWApyNM7eUMcFi15c1K4GGQ/edit?usp=sharing'>
+        <img src='https://symbols.getvecta.com/stencil_3/15_google-docs.b01a446db5.svg' alt='paper-resume-link' height='25px'></img></a></h6></div>
       <h1 className='title-tldr'>TD;LR</h1>
+      <p style={{letterSpacing:'0px'}}> A multilingual international entrepeneur, 
+        economist, and programmer with a natural talent 
+        for developing stable solutions to problems that 
+        arise in highly complex systems. Ability to be a team
+        player or a team leader in order to produce deliverables.
+        Highly analytical with a proven track record of analyzing 
+        large amounts data to guide business decisions. Data driven, 
+        deadline oriented, and always curious.</p>
       <h6>Click on a Section to find out more</h6>
       
       <div className='acc'>
       <div id='basics' className='acc-obj'>
+
         <Accordion
           title="Basics"
           content={<Basics />} 

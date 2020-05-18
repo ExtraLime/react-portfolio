@@ -24,16 +24,18 @@ const Experience = () => {
                 <article>
                 <p className='position'>Free Lance  Development</p>
                 <ul className='duties'>
-                <li>Currently I build websites, deploy cloud SQL databases, generate brilliant visualizations and write scripts for digitalizing documents.</li>
-                <li>Frequent <a href='https://www.codewars.com/users/ExtraLime' target='_blank' rel='noopener noreferrer'>code warrior</a>
-                <a href='https://www.kaggle.com/extralime' target='_blank' rel='noopener noreferrer'>kaggler</a>, and
-                <a href='https://www.kaggle.com/extralime/datasets' target='_blank' rel='noopener noreferrer'>dataset contributor.</a></li>
+                <li>Currently I work on projects of various nature on <a target='_blank' rel='noopener noreferrer' href='https://www.upwork.com/o/profiles/users/~01222555ded9660d46/?s=1110580755107926016#specializedPortfolios'>upwork.com</a></li>
+                <li><a target='_blank' rel='noopener noreferrer' href='https://www.coursera.org/account/accomplishments/professional-cert/7U9DYXX45U3G?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof'>IBM certified</a> Data Scientist</li>
+                <li>Frequent <a href='https://www.codewars.com/users/ExtraLime' target='_blank' rel='noopener noreferrer'>code warrior, </a>
+                <a href='https://www.kaggle.com/extralime' target='_blank' rel='noopener noreferrer'>kaggler</a>, and,
+                <a href='https://www.kaggle.com/extralime/datasets' target='_blank' rel='noopener noreferrer'> dataset contributor.</a></li>
+
                 <li>Recently deployed <a target='_blank' rel='noopener noreferrer' href='https://www.eurodesign.info'>EuroDesign</a></li>
                 </ul>
                 <p className='position'>Independant Consultant for International Trade</p>
                 <ul className='duties'>
                 <li>Provide effective guidance to newly established cashew processing plants around the world.</li>
-                <li>As part of the consultancy, brokered machine and part sales totaling over USD 5,000,000.</li>
+                <li>As part of the consultancy, brokered machine and part sales totaling over USD 20,000,000 since 2018.</li>
                 </ul>
                 </article>
                 </div>

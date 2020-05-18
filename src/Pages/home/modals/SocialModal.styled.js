@@ -31,8 +31,8 @@ export const Dialog = styled.div`
   border-radius: 5px;
   padding: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 23%;
+  left: 80%;
   transform: translate(-50%, -50%);
   transition: transform 0.4s ease-in-out;
   z-index: 3;
