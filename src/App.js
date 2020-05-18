@@ -10,11 +10,11 @@ import { ThemeProvider } from 'styled-components';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css'
  
-import Home from './components/Pages/home/Home';
-import About from './components/Pages/About';
-import Contact from './components/Pages/Contact';
-import Error from './components/Pages/Error';
-import Tldr from './components/Pages/tldr/Tldr';
+import Home from './Pages/home/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Error from './Pages/Error';
+import Tldr from './Pages/tldr/Tldr';
  
 export default function App()  {
   const [open, setOpen] = useState(false);

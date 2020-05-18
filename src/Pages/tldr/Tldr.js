@@ -1,20 +1,16 @@
 import React from 'react';
-import useHover from '../../popup/useHover'
+import useHover from '../../components/popup/useHover'
 import {
   StyledSectionHeader,
   StyledProjectTitle,
 } from './Tldr.styled'
-
-import DsIcons from './icons/DsIcons'
-import WdIcons from './icons/webdevicons'
-import DoIcons from './icons/DoIcons'
+import Skills from './Skills'
 import Projects from './Projects'
-import DataScience from './DataScience'
-import WebDev from './WebDev'
-import DevOps from './DevOps'
+
 import Experience from './Experience'
 import Education from './Education';
 import Basics from './Basics'
+import Accordion from '../../components/Accordion/Accordion'
 
 const Tldr = () => {
   const [hoverDS, isDSHovered] = useHover();
@@ -23,39 +19,36 @@ const Tldr = () => {
 
   return (
     <div className='tldr-page'>
-      <nav className='tldr-nav'>
-        <ul className='tldr-list'> 
-          <a href='#skills'><li>Skills</li></a>
-          <a href='#projects'><li>Projects</li></a>
-          <a href='#exp'><li>Experience</li></a>
-          <a href='#edu'><li>Education</li></a>
-        </ul>
-      </nav>
-      <div id='basics' className='basics'>
-        <Basics />
+      <div id='basics' className='acc-obj'>
+        <Accordion
+          title="Basics"
+          content={<Basics />} 
+          section='tldr'/>
       </div>
-      <h1 className='tldr-header' id='skills'>Skills</h1>
-      <StyledSectionHeader ref={hoverDS}>Data Science {isDSHovered &&
-        <div className='ds-icons'><DsIcons /></div>}
-      </StyledSectionHeader>
-      <DataScience />
-      <StyledSectionHeader ref={hoverWD}>Web Development {isWDHovered &&
-        <div className='wd-icons'><WdIcons /></div>}
-      </StyledSectionHeader>
-      <WebDev />
-      <StyledSectionHeader ref={hoverDO}>DevOps + Others {isDOHovered &&
-        <div className='do-icons'><DoIcons /></div>}
-      </StyledSectionHeader>
-      <DevOps />
-      <h1 className='tldr-header' id='projects'>Projects</h1>
-      <StyledProjectTitle>
-        <Projects />
-      </StyledProjectTitle>
-      <h1 className='tldr-header' id='exp'>Professional Experience</h1>
-      <Experience />
-      <h1 className='tldr-header' id="edu">Education</h1>
-      <Education />
-
+      <div id='skills' className='acc-obj'>
+        <Accordion
+          title="Skills"
+          content={<Skills />} 
+          section='tldr'/>
+      </div>
+      <div id='projects' className='acc-obj'>
+        <Accordion
+          title="Projects"
+          content={<Projects />}
+          section='tldr'/>
+      </div>
+      <div id='exp' className='acc-obj'>
+        <Accordion
+          title="Professional Experience"
+          content={<Experience />} 
+          section='tldr'/>
+      </div>
+      <div id='edu' className='acc-obj'>
+        <Accordion
+          title="Education"
+          content={<Education />} 
+          section='tldr'/>
+      </div>
     </div>
   );
 }

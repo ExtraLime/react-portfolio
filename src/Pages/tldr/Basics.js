@@ -1,5 +1,5 @@
 import React from 'react'
-import useHover from '../../popup/useHover'
+import useHover from '../../components/popup/useHover'
 
 const Basics = () => {
   const [hoverPhone, isPHHovered] = useHover()
