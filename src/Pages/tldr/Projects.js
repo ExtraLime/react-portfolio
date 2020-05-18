@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 import { ProjectImg } from './Projects.styled'
 import pdxcrime from './icons/pdxcrime.png'
 import resto from './icons/resto.png'
@@ -95,6 +95,7 @@ const Projects = () => {
                             </ReactTooltip>
                         </LinkSet>
                     </ProjectDetail>
+                    <div className='gotoprojects'> <NavLink to='/projects'>Go to All Projects</NavLink></div>
             </div>
         </div>
     )

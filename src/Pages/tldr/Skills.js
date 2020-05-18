@@ -9,7 +9,6 @@ import Accordion from '../../components/Accordion/Accordion'
 
 import {
     StyledSectionHeader,
-    StyledProjectTitle,
 } from './Tldr.styled'
 
 import useHover from '../../components/popup/useHover'

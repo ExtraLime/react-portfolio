@@ -1,9 +1,6 @@
 import React from 'react';
 import useHover from '../../components/popup/useHover'
-import {
-  StyledSectionHeader,
-  StyledProjectTitle,
-} from './Tldr.styled'
+
 import Skills from './Skills'
 import Projects from './Projects'
 
@@ -13,12 +10,14 @@ import Basics from './Basics'
 import Accordion from '../../components/Accordion/Accordion'
 
 const Tldr = () => {
-  const [hoverDS, isDSHovered] = useHover();
-  const [hoverWD, isWDHovered] = useHover()
-  const [hoverDO, isDOHovered] = useHover()
 
   return (
     <div className='tldr-page'>
+      <div className='resLink'><h6 style={{textAlign:'right',marginTop:'10px'}}>Looking for a file/paper resume?</h6></div>
+      <h1 className='title-tldr'>TD;LR</h1>
+      <h6>Click on a Section to find out more</h6>
+      
+      <div className='acc'>
       <div id='basics' className='acc-obj'>
         <Accordion
           title="Basics"
@@ -49,6 +48,7 @@ const Tldr = () => {
           content={<Education />} 
           section='tldr'/>
       </div>
+    </div>
     </div>
   );
 }

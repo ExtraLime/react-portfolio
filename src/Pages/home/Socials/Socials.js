@@ -17,7 +17,7 @@ const SocialButtonGroup = (label) => {
           </ReactTooltip>
           
           <a target='_blank' rel="noopener noreferrer" data-tip data-for='github' href='https://github.com/ExtraLime'>
-                <img alt='button-link' src='https://symbols.getvecta.com/stencil_64/30_github.8b5249309a.svg' height='25px' width='25px'></img></a>
+                <img alt='button-link' src='https://symbols.getvecta.com/stencil_27/120_visual-studio-team-services-github.7294b8678a.svg' height='25px' width='25px'></img></a>
           <ReactTooltip id='github' place='bottom' color='dodgerblue' effect='solid'>
           <span><div>Github</div></span>
           </ReactTooltip>

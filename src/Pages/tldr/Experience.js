@@ -25,10 +25,10 @@ const Experience = () => {
                 <p className='position'>Free Lance  Development</p>
                 <ul className='duties'>
                 <li>Currently I build websites, deploy cloud SQL databases, generate brilliant visualizations and write scripts for digitalizing documents.</li>
-                <li>Frequent <a href='https://www.codewars.com/users/ExtraLime' target='_blank' rel='noopener noreferer'>code warrior</a>
-                <a href='https://www.kaggle.com/extralime' target='_blank' rel='noopener noreferer'>kaggler</a>, and
-                <a href='https://www.kaggle.com/extralime/datasets' target='_blank' rel='noopener noreferer'>dataset contributor.</a></li>
-                <li>Recently deployed <a target='_blank' rel='noopener noreferer' href='https://www.eurodesign.info'>EuroDesign</a></li>
+                <li>Frequent <a href='https://www.codewars.com/users/ExtraLime' target='_blank' rel='noopener noreferrer'>code warrior</a>
+                <a href='https://www.kaggle.com/extralime' target='_blank' rel='noopener noreferrer'>kaggler</a>, and
+                <a href='https://www.kaggle.com/extralime/datasets' target='_blank' rel='noopener noreferrer'>dataset contributor.</a></li>
+                <li>Recently deployed <a target='_blank' rel='noopener noreferrer' href='https://www.eurodesign.info'>EuroDesign</a></li>
                 </ul>
                 <p className='position'>Independant Consultant for International Trade</p>
                 <ul className='duties'>
