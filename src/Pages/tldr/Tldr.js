@@ -18,7 +18,7 @@ const Tldr = () => {
       <h1 className='title-tldr'>TD;LR</h1>
       <p style={{letterSpacing:'0px'}}> A multilingual international entrepeneur, 
         economist, and programmer with a natural talent 
-        for developing stable solutions to problems that 
+        for efficiently developing stable solutions to problems that 
         arise in highly complex systems. Ability to be a team
         player or a team leader in order to produce deliverables.
         Highly analytical with a proven track record of analyzing 

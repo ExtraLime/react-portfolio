@@ -9,8 +9,8 @@ const SocialModal = (props) => {
         <Root>
             <Overlay>
                 <Dialog>
-                <StyledText>^</StyledText>                      
-                  <StyledText>Let's network, collaborate, code!</StyledText>                  
+                <p>^</p>                      
+                  <StyledText>Let's network, collaborate, and code!</StyledText>                  
                   <LinkSet>
                     <StyledRow><StyledLink onClick={() => props.onClickNext()}>Next!</StyledLink></StyledRow>
                  </LinkSet>

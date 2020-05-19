@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-
-export const StyledSvg = styled.svg`
-size:200%;`
-
 export const CloseButton = styled.button`  
   background:lightgrey;
   float:right;

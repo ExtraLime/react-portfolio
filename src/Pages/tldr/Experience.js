@@ -73,7 +73,7 @@ const Experience = () => {
                     </div>
                 </div>
                 <article>
-                    <p className='position'>Director of Trade Analytics</p>
+                    <p className='position'>Director of Trade and Analytics</p>
                     <ul className='duties'>
                         <li>Negotiated and executed multimillion-dollar contracts with international partners.</li>
                         <li>Developed expertise in procedures concerning international trade including international banking, documentary credit, and international shipping</li>
@@ -81,7 +81,7 @@ const Experience = () => {
                     </ul>
                     <p className='position'>Director of Research and Development</p>
                     <ul className='duties'>
-                        <li>Authored feasibility studies for various investment opportunities.</li>
+                        <li>Authored feasibility studies for various investment opportunities. <a target='_blank' rel='noopener noreferrer' href='https://drive.google.com/file/d/14t60Nw5RmuZ-2Mli5_8sT5mvHF6Lyrdg/view?usp=sharing'> Cashew Processing Feasibility Study</a></li>
                         <li>Traveled to India, Vietnam, and China to source the machinery necessary to execute the project.</li>
                         <li>Negotiated the purchase and delivery terms of the material ensuring that our material conformed to the exonerations that were awarded.</li>
                     </ul>
@@ -104,12 +104,16 @@ const Experience = () => {
                     <p className='position'>Digital Banking Systems Tester</p>
                     <ul className='duties'>
                         <li>Performed extensive testing for the new online banking platform before it was deployed credit union wide.</li>
+                        <li>Provided technical support credit union wide during testing.</li>
                         <li>Discovered and proposed solutions to countless bugs, assuring compatibility with the credit union’s core systems.</li>
                         <li>Created manuals and procedural documents used credit union wide to better assist our members.</li>
                     </ul>
                     <p className='position'>Technology Team Member</p>
                     <ul className='duties'>
                         <li>Developed troubleshooting methods and coached other teams on how to quickly diagnose specific issues members would encounter.</li>
+                        <li>Provided internal and external technical support over multiple platforms (phone, CRM, video, SMS, chat) regarding the
+                            online banking system.
+                        </li>
                     </ul>
                 </article>
             </div>
