@@ -5,7 +5,7 @@ const Basics = () => {
 
   return (
         <div className='basics-body'>
-          <p style={{letterSpacing:'0px'}}> A multilingual international entrepeneur, 
+          <p style={{letterSpacing:'0px',fontFamily:'Basic'}}> A multilingual international entrepeneur, 
         economist, and programmer with a natural talent 
         for efficiently developing stable solutions to problems that 
         arise in highly complex systems. Ability to be a team

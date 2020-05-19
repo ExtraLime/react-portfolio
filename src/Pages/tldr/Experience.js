@@ -6,7 +6,7 @@ import cargo from './icons/cargo.svg'
 
 const Experience = () => {
     return (
-        <div className='experience'>
+        <div className='experience' style={{fontFamily:'Basic'}}>
             <div className='current'>
                 <p className='date-span'>April 2018-Present</p>
                 <div className='current-grid'>
