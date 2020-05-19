@@ -31,9 +31,6 @@ const Accordion = (props) => {
         style={{ maxHeight: `${setHeight}` }}
         className="accordion__content"
       >
-        <div
-          className="accordion__text"          
-        />
         {props.content}
       </div>
     </div>

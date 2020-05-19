@@ -7,18 +7,24 @@ const DevOps = () => {
         <div className='ds-info'>
             <div className='meths'><h4>Operating Systems:</h4>
             <ul>
-            <li>Microsoft Windows, Apple OSX</li> 
-            <li>Debian Linux (Ubuntu, PopOs, Kali, ...etc)</li>
-            <li>Android, iOS, WindowsPhone</li>
+            <li>Microsoft Windows</li>
+            <li> Apple OSX</li> 
+            <li>Linux/Unix CLI </li>
+            <li>Android</li>
+            <li>iOS</li>
             </ul></div>
 
             <div className='ml'><h4>Cloud Computing:</h4>
             <ul>
             <li>Amazon Web Services (AWS)</li>
-            <li>Docker, GoogleCloudConsole</li>
-            <li>Azure, IBMCloud</li>
-            <li>DigitalOcean, Heroku</li>
-            <li>Netlify, Nginx</li>
+            <li>Docker</li>
+            <li>Google Cloud Console</li>
+            <li>Azure</li>
+            <li>IBM Cloud</li>
+            <li>Digital Ocean</li>
+            <li>Heroku</li>
+            <li>Netlify</li>
+            <li>Nginx</li>
             </ul></div>
             
             <div className='langframe'><h4>General:</h4>
