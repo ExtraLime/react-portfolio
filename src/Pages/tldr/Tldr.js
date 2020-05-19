@@ -3,32 +3,44 @@ import { NavLink } from 'react-router-dom'
 
 import Skills from './Skills'
 import Projects from './Projects'
-
+import useHover from '../../components/popup/useHover'
 import Experience from './Experience'
 import Education from './Education';
 import Basics from './Basics'
 import Accordion from '../../components/Accordion/Accordion'
 
 const Tldr = () => {
+  const [hoverPhone, isPHHovered] = useHover(true)
+  const [hoverMail, isMailHovered] = useHover()
 
   return (
     <div className='tldr-page'>
       <div className='resLink'><h6 style={{textAlign:'right',marginTop:'10px'}}>Looking for a resume?<a target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1Y3DyQ2scrdwkbHY9ufcTcWApyNM7eUMcFi15c1K4GGQ/edit?usp=sharing'>
         <img src='https://symbols.getvecta.com/stencil_3/15_google-docs.b01a446db5.svg' alt='paper-resume-link' height='25px'></img></a></h6></div>
-      <h1 className='title-tldr'>TD;LR</h1>
-      <p style={{letterSpacing:'0px'}}> A multilingual international entrepeneur, 
-        economist, and programmer with a natural talent 
-        for efficiently developing stable solutions to problems that 
-        arise in highly complex systems. Ability to be a team
-        player or a team leader in order to produce deliverables.
-        Highly analytical with a proven track record of analyzing 
-        large amounts data to guide business decisions. Data driven, 
-        deadline oriented, and always curious.</p>
-      <h6>Click on a Section to find out more</h6>
-      
+      <h1 className='title-tldr'>Tl;DR</h1>
+      <div style={{ textAlign: 'center' }} className='info'>
+          <h2>William Morgan</h2>
+          <h5>Portland, Oregon</h5>
+          <h5>Data Scientist </h5>
+          <h5>Full Stack Engineer</h5>
+        </div>
+      <div className='name-info'>
+          <div className='phonemail'>
+            <div ref={hoverPhone} >
+              <img alt="phoneicon" src='https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-phone.svg' height="35px"></img>{isPHHovered &&
+                <div>+1 (619) 246-7888</div>}
+            </div>
+            <a href='mailto:willdox7@live.com'>
+              <div ref={hoverMail} href='mailto:willdox7@live.com'>
+                <img alt="emailicon" style={{ borderRadius: '50%' }} src='https://symbols.getvecta.com/stencil_64/9_email.cf5807406d.png' height="35px"></img>{isMailHovered &&
+                  <div>Email Me!</div>}
+              </div>
+
+            </a>
+          </div>
+      </div>      
       <div className='acc'>
       <div id='basics' className='acc-obj'>
-
         <Accordion
           title="Basics"
           content={<Basics />} 
@@ -58,7 +70,7 @@ const Tldr = () => {
           content={<Education />} 
           section='tldr'/>
       </div>
-    </div>
+     </div>
     </div>
   );
 }

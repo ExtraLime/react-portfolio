@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css'
  
 import Home from './Pages/home/Home';
-import About from './Pages/About';
+import About from './Pages/about/About';
 import Contact from './Pages/Contact';
 import Error from './Pages/Error';
 import Tldr from './Pages/tldr/Tldr';

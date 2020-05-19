@@ -20,14 +20,6 @@ export const GlobalStyles = createGlobalStyle`
     text-align: center;
     text-transform: uppercase;
   }
-  p {
-    text-align:center;
-    letter-spacing:3px;
-    font-weight: bold;
-  }
 
-  div {
-    text-align: center;
-  }
 
 `

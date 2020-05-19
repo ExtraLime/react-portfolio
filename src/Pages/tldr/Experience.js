@@ -12,20 +12,17 @@ const Experience = () => {
                 <div className='current-grid'>
                 <div className="clogo-cont">
                     <a rel="noopener noreferrer" target='_blank' href='https://github.com/ExtraLime'>
-                        <img src={openclose} alt="logo uber" width="120" height="70"></img>
+                        <img id='a-code' src={openclose} alt="logo uber" width="120" height="70"></img>
                         </a>
                     <a rel="noopener noreferrer" target='_blank' href='https://stnc-ci.com'>
                         <img src={cargo}alt="logo lyft" width="120" height="70"></img>
                         </a>
-                    <a rel="noopener noreferrer" target='_blank' href='https://lyft.com'>
-                        <img src='https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyft_logo.svg' alt="logo uber" width="120" height="70"></img>
-                        </a>
+
                     </div>
                 <article>
                 <p className='position'>Free Lance  Development</p>
                 <ul className='duties'>
                 <li>Currently I work on projects of various nature on <a target='_blank' rel='noopener noreferrer' href='https://www.upwork.com/o/profiles/users/~01222555ded9660d46/?s=1110580755107926016#specializedPortfolios'>upwork.com</a></li>
-                <li><a target='_blank' rel='noopener noreferrer' href='https://www.coursera.org/account/accomplishments/professional-cert/7U9DYXX45U3G?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof'>IBM certified</a> Data Scientist</li>
                 <li>Frequent <a href='https://www.codewars.com/users/ExtraLime' target='_blank' rel='noopener noreferrer'>code warrior, </a>
                 <a href='https://www.kaggle.com/extralime' target='_blank' rel='noopener noreferrer'>kaggler</a>, and,
                 <a href='https://www.kaggle.com/extralime/datasets' target='_blank' rel='noopener noreferrer'> dataset contributor.</a></li>
