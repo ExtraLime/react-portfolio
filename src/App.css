@@ -76,13 +76,45 @@ margin:20px;
   justify-content:center;
   flex-shrink:5;
 }
-.about-pic {
-  filter: sephia(100%);
-  border-radius:40%;
-  width:125px;
-  height:150px;
+.early {
+  display:flex;
+  margin-top:50px;
+  text-align:left;
+  width:70%;
+}
+.text1 {
+  margin-left:1rem;
+}
+.about-current {
+  width:50%;
+  justify-content:center;
 }
 
+.about-page {
+  display:grid;
+  align-items: center;
+  justify-content:center;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:1000px;
+  font-family:'Basic', "serif";
+}
+.about-page.h1 {
+
+  font-family:'Alegreya SC', 'serif';
+}
+.about-line1{
+  margin-right:40px;
+  width:50%;
+  overflow:hidden;
+}
+.about-intro{
+  display:flex;
+  justify-content:center;
+  grid-template-rows: 1fr;
+  grid-template-columns:1fr 1fr;
+}
 
 .tldr-page {
   letter-spacing: 0px;
@@ -283,7 +315,7 @@ margin:10px
   margin-top:50px;
 }
 .stnc-grid {
-  display:flex;
+  display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:  
   "Logo CInfo";
@@ -422,7 +454,7 @@ margin:10px
 }
 .edu-name {
   font-size:24px;
-  font-family:'Alegreya SC', serif;
+  font-family:'Alegreya SC', 'serif';
   margin-bottom:0px;
   text-align:center;
 }

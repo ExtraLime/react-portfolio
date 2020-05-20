@@ -29,6 +29,11 @@ export const StyledPic = styled.img`
     filter:greyscale(100%);
     align-self:center`;
 
+export const StyledPic1 = styled.img`
+    border-radius:30%;
+    filter:sephia(100%);
+    align-self:center`;
+
 export const StyledSection = styled.h2`
     color:white;
     font-size:16px;    

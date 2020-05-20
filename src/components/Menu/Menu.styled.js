@@ -61,3 +61,12 @@ export const StyledImg = styled.img`
     -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
     filter: sephia(100%);
     `
+export const StyledImg1 = styled.img`
+    border-radius: 50%;
+    height:auto;
+    width:7rem;
+    position:relative;
+    align-self:center;
+    -webkit-filter: sepia(100%); /* Safari 6.0 - 9.0 */
+    filter: sephia(100%);
+    `

@@ -22,7 +22,7 @@ const Projects = () => {
                     <ProjectDetail>Do you live in PDX? Check out your neighborhood!
                     A webapp that combines capturing and warehousing streaming
                     tweets in a cloud SQL database, hosting that data via custom API,
-                    and visualizing that data through a custom dashboard. Built with ReactJS and ExpressJS
+                    and visualizing that data through a custom dashboard. Built with ReactJS and ExpressJS.
                     <LinkSet>                    
                             <a target='_blank' href='http://pdxcrimemap.net' rel="noopener noreferrer" data-tip data-for='pdx-site'>
                                  <img alt='button-link' src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>

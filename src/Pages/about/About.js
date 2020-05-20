@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactTooltip from "react-tooltip";
 import willabjsmall from '../../components/Menu/will-abj-small.jpg'
-import { StyledImg } from '../../components/Menu/Menu.styled'
+import { StyledImg1 } from "../../components/Menu/Menu.styled"
 import "./About.css"
-
+import west from './west.png'
+import { createUnparsedSourceFile } from 'typescript';
 
 const About = () => {
    return (
       <div className='about-page'>
-         <h1 style={{ marginTop: '50px' }}>About Me</h1>
-         <div className='about-into'>
-            <StyledImg id='menu-pic' src={willabjsmall} alt='profile-pic'></StyledImg>
+         <h1 style={{ marginTop: '50px',fontFamily:'Alegreya SC' }}>About Me</h1>
+         <div className='about-intro'>
+            
+            <div className='about-line1'>
             <p className='into-text'>By now you know my name is Will Morgan. If you came from the TL;DR page then you may have read
              <a target='_blank' href='http://pdxcrimemap.net' rel="noopener noreferrer" data-tip data-for='tldr-talk'> this.
                                  </a></p>
@@ -24,13 +26,36 @@ const About = () => {
                large amounts data to guide business decisions. Data driven,
                               deadline oriented, and always curious.</p>
             </ReactTooltip>
-            <p>Obviously as a fellow human, we are all so much more than the
-            tweet at the top of our resumes. This entire site is dedicated to
-                            demonstrating that point.</p>
-            <div>
+            <div><p>Just like any human, I am so much more than the
+            tweet at the top of my resume. This entire site is dedicated to
+                            demonstrating that point.</p></div>
+               </div>
+               <div className='about-pic'><StyledImg1 id='menu-pic' src={willabjsmall} alt='profile-pic'></StyledImg1></div>
+               </div>
+            <div className='about-current'>
+               <ul>I am passionate about technology.</ul>
+                 <p>I've been building and repairing computers since I was around 8 years. In early 2010, I slowly started my conversion to Linux.
+                 I love learning new languages, frameworks and techniques. I also get excited by efficiently deisgned algorithms.</p>
+               <p>I reside in the Pacific Northwest, not because I grew up here, 
+                  but because I love the mountains, the forest, and the beach.</p>
+               <ul>I enjoy staying active.
+                  <li>Tennis - USTA 4.0 rating, I typically play 8-10 hours per week.</li>
+                  <li>Biking - I typically bike about 70 miles per week.</li>
+                  <li>HIIT - I enjoy high intensity interval training.</li>
+                  <li>Rock Climbing - I climb around twice a month.</li>
+               </ul>
+               <ul>Other interests include:
+                  <li>Reading (mostly sci-fi)</li>
+                  <li>Cooking</li>
+               </ul>
             </div>
-            <article>
-               <h5>Briefly</h5>
+               
+            <div className='early'> 
+            <div className='west-pic'>
+            <img width='150px' src={west}alt="West Coast States Outline Clipart California East Coast@pngkit.com"></img></div>           
+            <article className='text1' >
+               <h5>Early</h5>
+               <div >
                <p>I went to highschool in the Pacific Northwest, traveling around the world during the summer.
                I studied Economics and Mathematics in San Diego, waiting tables and working as
                a teller to pay for my education. In fact I'm still paying for my education.
@@ -40,7 +65,7 @@ const About = () => {
                I mean I helped people over the phone solve thier problems with our systems.
                Eventually I went on to the managed the team charged with troubleshooting
                                     the newly deployed online banking system.</p>
-            </article>
+                                    </div></article>
          </div>
          <div>
             <h5>Then I moved to Africa</h5>
