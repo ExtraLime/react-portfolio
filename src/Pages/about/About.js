@@ -50,9 +50,8 @@ const About = () => {
             trading partners and sign large contracts with clients. I imported the machinery necessary necessary to
             process 10,000 tons of raw cashews per year to the Ivory Coast, converted an old warehouse into a BRC
             certified food processing facility. By the time I had left Abidjan, I had shipped cacao to China,
-            raw cashews to Vietnam and India was exporting cashew kernals to the USA. In fact if you buy
-            Kirkland Signature cashews, theres a good chance some of it came from this processing facility!
-                                 </p>
+            raw cashews to Vietnam and India, and was exporting cashew kernels to the USA. If you buy
+            Kirkland Signature cashews, theres a good chance some of it came from this processing facility!</p>
          </div>
          <div>
             <h5>Then I moved back to Portland</h5>

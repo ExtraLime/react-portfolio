@@ -347,8 +347,11 @@ margin:10px
 .project2 {
   width:275px;
   padding:0px 25px 0px 25px;
+}
 
-
+.edugrid{
+  display:flex;
+  float:left;
 }
 .stnc-info {
   grid-area:CInfo;
@@ -366,6 +369,9 @@ margin:10px
   width:100%;
   padding:20px 0px 5px 0px;
 
+}
+#id {
+  align-items: center;
 }
 .op-info {
   grid-area:CInfo;
@@ -424,9 +430,13 @@ margin:10px
 }
 .edu-name {
   font-size:24px;
+  font-family:'Alegreya SC', serif;
+  margin-bottom:0px;
+  text-align:center;
 }
 .degree {
   font-size:16px;
+  margin:0px;
 }
 .focus {
   font-size:12px;
@@ -443,9 +453,29 @@ margin:10px
   
 }
 .csusm {
-  grid-area:CSUSM;
   display:flex;
+  grid-area:CSUSM;
+  grid-template-columns:1fr 1fr;
   margin-bottom:25px;  
+  text-align:left;
+  width:100%;
+  overflow:hidden;
+}
+.edu-logo {
+  float:left;
+}
+.edu-loc {
+  font-family:"Basic", "serif";
+  text-align:center;
+  margin:0px;
+}
+.edu-info {
+  width:100%;
+  font-family:"Basic", "serif";
+  text-align:center;
+}
+.focus {
+  margin:3px;
 }
 .fcc {
   grid-area:FCC;

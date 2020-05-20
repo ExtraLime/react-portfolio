@@ -20,10 +20,8 @@ const Menu = () => {
         <StyledImg id='menu-pic' src={willabjsmall} alt='profile-pic'></StyledImg>
         <NavLink onClick={() => close()} to="/">Home</NavLink>
         <NavLink onClick={() => close()} to="/about">About</NavLink>
-        <NavLink onClick={() => close()} to="/tldr">tl;dr</NavLink>
+        <NavLink onClick={() => close()} to="/tldr">Professional</NavLink>
         <NavLink onClick={() => close()} to="/projects">Projects</NavLink>
-        <NavLink onClick={() => close()} to="/work">Experience</NavLink>
-        <NavLink onClick={() => close()} to="/edu">Education</NavLink>
         <NavLink onClick={() => close()} to="/contact">Contact</NavLink>
         <SocialButtonGroup label='menu'></SocialButtonGroup> 
       </StyledMenu>

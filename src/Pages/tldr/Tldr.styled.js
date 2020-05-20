@@ -12,8 +12,10 @@ export const StyledIntro = styled.p`
 
 export const StyledSectionHeader = styled.h3`
     color:dodgerblue;
-    font-size:14px;
+    font-size:18px;
     font-weight:bold;
+    text-align:center;
+    margin:10px;
     `
 export const StyledBasics = styled.p`
     text-align:block;
