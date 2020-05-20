@@ -8,7 +8,7 @@ import "./About.css"
 const About = () => {
    return (
       <div className='about-page'>
-         <h1 style={{ marginTop: '100px' }}>About Me</h1>
+         <h1 style={{ marginTop: '50px' }}>About Me</h1>
          <div className='about-into'>
             <StyledImg id='menu-pic' src={willabjsmall} alt='profile-pic'></StyledImg>
             <p className='into-text'>By now you know my name is Will Morgan. If you came from the TL;DR page then you may have read
