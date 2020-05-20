@@ -16,7 +16,7 @@ const WebDev = () => {
             <div className='ml'><h4>Back End:</h4>
             <ul>
             <li>Flask, Django</li>
-            <li>SQL,MongoDB</li>
+            <li>SQL, MongoDB</li>
             <li>Node.js,  ExpressJS</li>
             <li>PHP, Postman</li>
             </ul></div>

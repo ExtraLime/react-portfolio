@@ -8,7 +8,7 @@ const DevOps = () => {
             <div className='meths'><h4>Operating Systems:</h4>
             <ul>
             <li>Microsoft Windows</li>
-            <li> Apple OSX</li> 
+            <li>Apple OSX</li> 
             <li>Linux/Unix CLI </li>
             <li>Android</li>
             <li>iOS</li>
@@ -25,11 +25,13 @@ const DevOps = () => {
             <li>Heroku</li>
             <li>Netlify</li>
             <li>Nginx</li>
+            <li>Apache</li>
             </ul></div>
             
             <div className='langframe'><h4>General:</h4>
             <ul>
-            <li>Microsoft Office (Excel, Word, Access, Outlook)</li>
+            <li>Microsoft Office</li>
+            <li>(Excel, Word, Access, Outlook)</li>
             <li>Tableau, Zoom</li> 
             <li>GitHub, Atom</li>
             <li>VSCode</li>
