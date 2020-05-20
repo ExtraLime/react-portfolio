@@ -44,9 +44,9 @@ const Projects = () => {
                 <a target='_blank' href='https://slides.com/will-m/opening-a-restaurant-in-portland-or/#/' rel="noopener noreferrer">
                     <ProjectImg src={resto} style={{ borderRadius: '30%' }}></ProjectImg></a>
                     <StyledProjectTitle>Opening a Restaurant</StyledProjectTitle>
-                    <ProjectDetail>A data science project that applies statiscal techniques to 
+                    <ProjectDetail>A data science project that applies statistical techniques to 
                         'big data' to determine the best cuisine and location to open a new 
-                        restaurant. This project combines advanced API calls and data manipulation
+                        restaurant. This project combines advanced API calling and data manipulation
                          as well as advanced mapping techniques.
                          <LinkSet>                    
                             <a target='_blank' rel="noopener noreferrer" data-tip data-for='res-site' href='https://slides.com/will-m/opening-a-restaurant-in-portland-or/#/'>
