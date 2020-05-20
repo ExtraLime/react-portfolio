@@ -14,9 +14,11 @@ import {
 import useHover from '../../components/popup/useHover'
 
 const Skills = () => {
-    const [hoverDS, isDSHovered] = useHover(true);
-    const [hoverWD, isWDHovered] = useHover(true);
-    const [hoverDO, isDOHovered] = useHover(true);
+    const [hoverDS, isDSHovered] = useHover();
+    const [hoverWD, isWDHovered] = useHover();
+    const [hoverDO, isDOHovered] = useHover();
+
+
     return (
         <>
         <div id='ds' className='acc-obj'>

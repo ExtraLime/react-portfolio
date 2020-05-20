@@ -8,10 +8,12 @@ import Experience from './Experience'
 import Education from './Education';
 import Basics from './Basics'
 import Accordion from '../../components/Accordion/Accordion'
+import ComboIcons from '../tldr/icons/ComboIcons'
 
 const Tldr = () => {
   const [hoverPhone, isPHHovered] = useHover(true)
   const [hoverMail, isMailHovered] = useHover()
+  const [hoverSkills, isSkillsHovered] = useHover()
 
   return (
     <div className='tldr-page'>
@@ -44,8 +46,9 @@ const Tldr = () => {
           content={<Basics />} 
           section='tldr'/>
       </div>
-      <div id='skills' className='acc-obj'>
-        <Accordion
+      <div ref={hoverSkills} id='skills' className='acc-obj'>{isSkillsHovered &&
+                  <div><ComboIcons/></div>}
+        <Accordion 
           title="Skills"
           content={<Skills />} 
           section='tldr'/>
