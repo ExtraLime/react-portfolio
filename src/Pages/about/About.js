@@ -44,6 +44,12 @@ const About = () => {
                   <li>HIIT - I enjoy high intensity interval training.</li>
                   <li>Rock Climbing - I climb around twice a month.</li>
                </ul>
+               <ul>I enjoy music
+                  <li>I play guitar, bass, and trunmpet.</li>
+                  <li>I produce electronic/hip-hop beats as a hobby. Check out my  
+                     <a target='_blank' rel='noopener noreferrer' href='https://soundcloud.com/willdox7'>     <img src='https://symbols.getvecta.com/stencil_65/23_soundcloud.7a21c6a8fd.svg' height='15px' alt='soundcloud-icon'></img>.</a>
+                  </li>
+               </ul>
                <ul>Other interests include:
                   <li>Reading (mostly sci-fi)</li>
                   <li>Cooking</li>

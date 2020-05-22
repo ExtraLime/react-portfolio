@@ -315,12 +315,12 @@ margin:10px
   margin-top:50px;
 }
 .stnc-grid {
-  display:grid;
+  display:flex;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:  
   "Logo CInfo";
   align-content: center;
-  overflow: hidden;
+  overflow:hidden;
   width: 100%;  
 }
 .s3c-grid {
@@ -336,6 +336,7 @@ margin:10px
 .clogo {
   grid-area:Logo;  
   float:left;
+  
 
 }
 .fcc li {

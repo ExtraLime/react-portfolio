@@ -9,7 +9,7 @@ const WebDev = () => {
             <ul>
             <li>HTML5, CSS, JQuery</li>
             <li>JavaScript, TypeScript</li>            
-            <li>ReactJS, AngularJS, VueJS</li> 
+            <li>React, Angular, Vue</li> 
             <li>Bootstrap, WordPress</li> 
             <li>D3, LeafletJS, ChartJS</li> 
             </ul></div>
