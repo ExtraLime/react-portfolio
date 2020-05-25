@@ -14,14 +14,14 @@ export const ProjectDetails = styled.article`
     position:absolute;
     `;
 export const StyledProjectTitle = styled.h2`
-    color:white;
+    color:dodgerblue;
     font-size:18px;
     font-weight:bold;
     `;
 
 export const ProjectDetail = styled.article`
-    color:white;
-    font-size:16px;
+    color:black;
+    font-size:14px;
     font-weight:bold;
     margin-left: auto;
     margin-right: auto;

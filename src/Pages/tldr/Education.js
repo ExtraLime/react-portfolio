@@ -5,7 +5,7 @@ const Education = () => {
         <div className='education'>
             <div className='csusm'>
 
-            <div className='edu-logo'><a rel="noopener noreferrer" href='https://www.csusm.edu' target='_blank'><img src='https://www.csusm.edu/_resources/images/logos/csusm-textlogo-sp.png' alt="csusm-img" width='200px' height="150px"></img></a></div>
+            <div className='edu-logo'><a rel="noopener noreferrer" href='https://www.csusm.edu' target='_blank'><img src='https://www.csusm.edu/gsr/student/showcase-docs/csusm-logo_full-name-hills-above_blue.jpg' alt="csusm-img" width='200px' height="150px"></img></a></div>
             <div className='edu-info'>
                 <p className='edu-name'>California State University</p>
                 <p className='edu-loc'>San Marcos, CA</p>

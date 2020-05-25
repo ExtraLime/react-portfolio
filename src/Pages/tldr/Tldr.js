@@ -45,12 +45,12 @@ const Tldr = () => {
           content={<Basics />} 
           section='tldr'/>
       </div>
-      <div ref={hoverSkills} id='skills' className='acc-obj'>{isSkillsHovered &&
-                  <div><ComboIcons/></div>}
+      <div ref={hoverSkills} id='skills' className='acc-obj'>
         <Accordion 
           title="Skills"
           content={<Skills />} 
-          section='tldr'/>
+          section='tldr'/>{isSkillsHovered &&
+            <div><ComboIcons/></div>}
       </div>
       <div id='projects' className='acc-obj'>
         <Accordion

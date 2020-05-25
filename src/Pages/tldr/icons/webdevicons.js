@@ -18,7 +18,7 @@ const WdIcons = () => {
         <img alt='webdevicon' src={flask} height='20px'></img>
         <img alt='webdevicon' src='https://symbols.getvecta.com/stencil_87/14_leaflet.224d9b0b8f.svg' height='20px'></img>
         <img alt='webdevicon' src={express} height='20px'></img>
-        <img alt='webdevicon' src={chartjs} height='20px'></img>
+        <img alt='webdevicon' src='https://www.chartjs.org/media/logo-title.svg' height='20px'></img>
         <img alt='webdevicon' src='https://symbols.getvecta.com/stencil_25/47_django.1a49b7bbf8.svg' height="20px"></img>
         <img alt='webdevicon' src='https://symbols.getvecta.com/stencil_25/11_vuejs.d1c1311019.svg' height='20px'></img>
         <img alt='webdevicon' src='https://symbols.getvecta.com/stencil_25/26_bootstrap.7033e4f29e.svg' height="20px"></img>

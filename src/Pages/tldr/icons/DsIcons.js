@@ -11,7 +11,7 @@ const DsIcons = () => {
         <img alt="dsicon" src='https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg' height='20px'></img>
         <img alt="dsicon" src='https://upload.wikimedia.org/wikipedia/commons/0/01/Created_with_Matplotlib-logo.svg' height='20px'></img>
         <img alt="dsicon" src='https://symbols.getvecta.com/stencil_92/19_plotly-icon.520da921e8.svg' height='20px'></img>
-        <img alt="dsicon" src='https://user-images.githubusercontent.com/17051931/57117419-e8e63b00-6d29-11e9-90d9-a09e931b7cfe.png' height='20px'></img>
+        <img alt="dsicon" src='https://upload.wikimedia.org/wikipedia/commons/6/69/XGBoost_logo.png' height='20px'></img>
         <img alt="dsicon" src={r} height='20px'></img>
         <img alt="dsicon" src='https://cdn.freelogovectors.net/wp-content/uploads/2018/12/ibm-watson-logo.png' height='20px'></img>
         <img alt="dsicon" src='https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg' height="20px"></img>

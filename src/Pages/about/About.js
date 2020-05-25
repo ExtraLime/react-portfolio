@@ -4,7 +4,6 @@ import willabjsmall from '../../components/Menu/will-abj-small.jpg'
 import { StyledImg1 } from "../../components/Menu/Menu.styled"
 import "./About.css"
 import west from './west.png'
-import { createUnparsedSourceFile } from 'typescript';
 
 const About = () => {
    return (
@@ -14,7 +13,7 @@ const About = () => {
             
             <div className='about-line1'>
             <p className='into-text'>By now you know my name is Will Morgan. If you came from the TL;DR page then you may have read
-             <a target='_blank' href='http://pdxcrimemap.net' rel="noopener noreferrer" data-tip data-for='tldr-talk'> this.
+             <a href='/tldr' data-tip data-for='tldr-talk'> this.
                                  </a></p>
             <ReactTooltip id='tldr-talk' place='bottom' color='dodgerblue' effect='solid'>
                <p style={{ maxWidth: "300px" }}>A multilingual international entrepeneur,

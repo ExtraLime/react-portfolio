@@ -15,7 +15,7 @@ const DoIcons = () => {
         <img alt="doicon" src='https://symbols.getvecta.com/stencil_73/84_amazon-web-services-icon.4657002904.svg' height='20px'></img>
         <img alt="doicon" src='https://symbols.getvecta.com/stencil_83/40_heroku-icon.b94c7c6088.svg' height='20px'></img>
         <img alt="doicon" src={nginx} height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_74/6_apache-software-foundation-official.dbc39ac6b3.svg' height='20px'></img>
+        <img alt="doicon" src='https://symbols.getvecta.com/stencil_74/5_apache-software-foundation.ea8baa6b69.svg' height='20px'></img>
         <img alt="doicon" src='https://symbols.getvecta.com/stencil_33/1_microsoft-excel.275029ec56.svg' height='20px'></img>
         <img alt="doicon" src='https://symbols.getvecta.com/stencil_33/4_microsoft-access.688573998d.svg' height='20px'></img>
         <img alt="doicon" src='https://symbols.getvecta.com/stencil_33/0_microsoft-word.8e0b7b27ad.svg' height='20px'></img>
