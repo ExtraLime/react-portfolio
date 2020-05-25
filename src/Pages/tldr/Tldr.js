@@ -11,8 +11,7 @@ import Accordion from '../../components/Accordion/Accordion'
 import ComboIcons from '../tldr/icons/ComboIcons'
 
 const Tldr = () => {
-  const [hoverPhone, isPHHovered] = useHover(true)
-  const [hoverMail, isMailHovered] = useHover()
+  const [hoverPhone, isPHHovered] = useHover()
   const [hoverSkills, isSkillsHovered] = useHover()
 
   return (
@@ -31,9 +30,9 @@ const Tldr = () => {
                 <div>+1 (619) 246-7888</div>}
             </div>
             <a href='mailto:willdox7@live.com'>
-              <div ref={hoverMail} href='mailto:willdox7@live.com'>
-                <img alt="emailicon" style={{ borderRadius: '50%' }} src='https://symbols.getvecta.com/stencil_64/9_email.cf5807406d.png' height="35px"></img>{isMailHovered &&
-                  <div>Email Me!</div>}
+              <div href='mailto:willdox7@live.com'>
+                <img alt="emailicon" style={{ borderRadius: '50%' }} src='https://symbols.getvecta.com/stencil_64/9_email.cf5807406d.png' height="35px"></img>
+                  
               </div>
 
             </a>

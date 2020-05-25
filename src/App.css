@@ -149,12 +149,9 @@ h4 {
 
 .meths {
   justify-content: center;
-  background:black;
-  border:1px solid black;
-  box-shadow: 4px 2px 4px 2px rgba(0,0,0,0.2);
+  background:white;
   transition: 0.3s;
   text-align:center;
-  color:white;
 }
 .social-home {
   width:12%;
@@ -172,11 +169,8 @@ h4 {
 .langframe {
   text-align:center;
   justify-content: center;
-  background:black;
-  border:1px solid black;
-  color:white;
   align-items:center;
-  box-shadow: 16px 4px 8px 8px rgba(0,0,0,0.2);
+
 }
 
 .langframe:hover h4{
@@ -190,10 +184,6 @@ h4 {
 }
 .ml {
   justify-content: center;
-  background:black;
-  border:1px solid black;
-  box-shadow: 16px 4px 8px 8px rgba(0,0,0,0.2);
-  color:white;
   text-align:center;
   font-size:16px;
 }
@@ -307,7 +297,7 @@ margin:10px
   text-align:center;
 }
 .social-buttons-home {
-  background:black;
+
   grid-area:SocialButtons;
   margin-top:15px;
 }

@@ -46,10 +46,10 @@ const SocialButtonGroup = (label) => {
           <span><div>Codewars</div></span>
           </ReactTooltip>
 
-          <a target='_blank' rel="noopener noreferrer" data-tip data-for='stack' href='https://stackoverflow.com/users/13366122/1extralime'>
-                <img alt='button-link' src='https://symbols.getvecta.com/stencil_96/78_stack-overflow-icon.ab8e9cb041.svg' height='25px' width='25px'></img></a>
-          <ReactTooltip id='stack' place='bottom' color='dodgerblue' effect='solid'>
-          <span><div>StackOverflow</div></span>
+          <a target='_blank' rel="noopener noreferrer" data-tip data-for='sc' href='https://soundcloud.com/willdox7'>
+                <img alt='button-link' src='https://symbols.getvecta.com/stencil_65/23_soundcloud.7a21c6a8fd.svg' height='25px' width='25px'></img></a>
+          <ReactTooltip id='sc' place='bottom' color='dodgerblue' effect='solid'>
+          <span><div>Listen on SoundCloud</div></span>
           </ReactTooltip>
 
           <a target='_blank' rel="noopener noreferrer" data-tip data-for='twitter' href='https://twitter.com/1extralime'>

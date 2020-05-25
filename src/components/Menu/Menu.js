@@ -5,7 +5,7 @@ import { StyledMenu, StyledLink, StyledImg } from "./Menu.styled";
 import { useOnClickOutside } from "../../hooks";
 import { NavLink } from 'react-router-dom';
 import willabjsmall from './will-abj-small.jpg';
-import SocialButtonGroup from './MenuSocials/MenuSocials'
+
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -23,7 +23,7 @@ const Menu = () => {
         <NavLink onClick={() => close()} to="/tldr">Professional</NavLink>
         <NavLink onClick={() => close()} to="/projects">Projects</NavLink>
         <NavLink onClick={() => close()} to="/contact">Contact</NavLink>
-        <SocialButtonGroup label='menu'></SocialButtonGroup> 
+
       </StyledMenu>
         
       <Hamburger open={open} setOpen={setOpen} />
