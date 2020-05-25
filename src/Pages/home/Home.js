@@ -11,7 +11,6 @@ const Home = () => {
       <h1>Welcome</h1>
       <p>I'm Will Morgan, and this is my website.</p>
       <p>Click on the Link to get started!</p>
-      <h1>V</h1>
       </div>
       <Connect />
     </div>

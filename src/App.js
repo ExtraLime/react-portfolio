@@ -15,6 +15,7 @@ import About from './Pages/about/About';
 import Contact from './Pages/Contact';
 import Error from './Pages/Error';
 import Tldr from './Pages/tldr/Tldr';
+import Projects from './Pages/projects/Projects'
  
 export default function App()  {
   const [open, setOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function App()  {
              <Route path='/tldr' component={Tldr}/>
              <Route path="/about" component={About}/>
              <Route path="/contact" component={Contact}/>
+             <Route path="/projects" component={Projects}/>
             <Route component={Error}/>
            </Switch>
       </BrowserRouter>

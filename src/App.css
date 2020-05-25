@@ -78,9 +78,27 @@ margin:20px;
 }
 .early {
   display:flex;
-  margin-top:50px;
-  text-align:left;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
   width:70%;
+}
+.africa {
+  display:flex;
+  width:70%;
+  margin-right:auto;
+  margin-left:auto;
+}
+.africa-info {
+  margin: 0px 15px 0px 0px;
+}
+.africa-img-row {
+  display:flex;
+  justify-content:space-evenly;
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right:80px;
 }
 .text1 {
   margin-left:1rem;
@@ -114,6 +132,32 @@ margin:20px;
   justify-content:center;
   grid-template-rows: 1fr;
   grid-template-columns:1fr 1fr;
+}
+.about-container {
+  display:flex;
+  grid-template-columns: 1fr 1fr;
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
+  
+}
+.about-image-container {
+  display:grid;
+  overflow:hidden;
+}
+.about-image-container.img {
+  display:block;
+
+}
+#about-end {
+  margin-bottom:100px;
+}
+#music-cont {
+  display:block;
+  margin-bottom:20px;
+}
+.about-text {
+  width:100%;
 }
 
 .tldr-page {
@@ -275,6 +319,7 @@ ul {
 .social-socialmodal a {
 margin:10px  
 }
+
 
 .home-page {
   color:black;

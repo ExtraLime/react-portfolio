@@ -12,7 +12,7 @@ const IntroModal = (props) => {
                 <Dialog>
                     <CloseButton onClick={() => props.onClose()}>X</CloseButton>
                     <StyledText1>Short On Time?</StyledText1>
-                    <St2>Check Out the TL;DR page!</St2>
+                    <St2>Check Out the <NavLink to='/tldr'>Professional</NavLink> page!</St2>
                     <StyledText>Otherwise</StyledText>
                     <p>Click Continue!</p>
                     <LinkSet>

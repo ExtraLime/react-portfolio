@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import PadBank1 from './PadBank'
 import { bankOne, bankTwo } from './SoundBanks'
-import './DrumKit.css'
+//import './DrumKit.css'
 
 const DrumKit = (props) => {
     const [power, setPower] = useState(true);

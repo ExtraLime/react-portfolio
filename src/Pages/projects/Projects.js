@@ -4,7 +4,7 @@ import DrumKit from './drumkit/DrumKit'
 const Projects = () => {
     return (
         <div>Hi!
-            <DrumKit />
+            
         </div>
     )
 }
