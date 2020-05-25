@@ -277,7 +277,7 @@ margin:10px
 }
 
 .home-page {
-  color:white;
+  color:black;
   display:grid;  
   grid-template-columns: 1fr;
   grid-template-rows:1fr 1fr 1fr;

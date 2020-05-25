@@ -9,6 +9,7 @@ import Education from './Education';
 import Basics from './Basics'
 import Accordion from '../../components/Accordion/Accordion'
 import ComboIcons from '../tldr/icons/ComboIcons'
+import ReactTooltip from "react-tooltip";
 
 const Tldr = () => {
   const [hoverPhone, isPHHovered] = useHover()
@@ -25,17 +26,19 @@ const Tldr = () => {
         </div>
       <div className='name-info'>
           <div className='phonemail'>
-            <div ref={hoverPhone} >
-              <img alt="phoneicon" src='https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-phone.svg' height="35px"></img>{isPHHovered &&
-                <div>+1 (619) 246-7888</div>}
-            </div>
-            <a href='mailto:willdox7@live.com'>
-              <div href='mailto:willdox7@live.com'>
-                <img alt="emailicon" style={{ borderRadius: '50%' }} src='https://symbols.getvecta.com/stencil_64/9_email.cf5807406d.png' height="35px"></img>
-                  
-              </div>
-
+          <a href='/tldr' data-tip data-for='phoneicon'>                                 
+              <img alt="phoneicon" src='https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-phone.svg' height="35px"></img>
+              </a>
+              <ReactTooltip id='phoneicon' place='bottom' color='dodgerblue' effect='solid'>
+              <span>+1 (619) 246-7888</span>
+            </ReactTooltip>
+            
+            <a href='mailto:willdox7@live.com' data-tip data-for='mailicon'>
+                <img alt="emailicon" style={{ borderRadius: '50%' }} src='https://symbols.getvecta.com/stencil_64/9_email.cf5807406d.png' height="35px"></img>              
             </a>
+            <ReactTooltip id='mailicon' place='bottom' color='dodgerblue' effect='solid'>
+              <span>Email Me</span>
+            </ReactTooltip>
           </div>
       </div>      
       <div className='acc'>
