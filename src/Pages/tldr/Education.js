@@ -17,7 +17,7 @@ const Education = () => {
             </div>
 
             <div className='thinkful'>
-            <div className='edu-logo'><a rel="noopener noreferrer" href='https://www.thinkful.com' target='_blank'><img style={{borderRadius:'5%'}} src='https://tf-assets-prod.s3.amazonaws.com/splash/social/thinkful_logo.png' alt="tf-img" width="200px" height="150px"></img></a></div>
+            <div className='edu-logo'><a rel="noopener noreferrer" href='https://www.thinkful.com' target='_blank'><img style={{borderRadius:'5%'}} src='https://prnewswire2-a.akamaihd.net/p/1893751/sp/189375100/thumbnail/entry_id/1_iwsua18b/def_height/1068/def_width/2560/version/100011/type/1' alt="tf-img" width="200px" height="150px"></img></a></div>
             <div className='edu-info'>
             <p className='edu-name'>Thinkful</p>
             <p className='edu-loc'>Remote</p>

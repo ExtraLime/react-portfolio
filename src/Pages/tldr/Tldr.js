@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
 
 import Skills from './Skills'
 import Projects from './Projects'
@@ -9,10 +8,10 @@ import Education from './Education';
 import Basics from './Basics'
 import Accordion from '../../components/Accordion/Accordion'
 import ComboIcons from '../tldr/icons/ComboIcons'
-import ReactTooltip from "react-tooltip";
+
 
 const Tldr = () => {
-  const [hoverPhone, isPHHovered] = useHover()
+
   const [hoverSkills, isSkillsHovered] = useHover()
 
   return (
@@ -23,24 +22,7 @@ const Tldr = () => {
           <h2>William Morgan</h2>
           <h5>Portland, Oregon</h5>
           <h5>Full Stack Data Scientist</h5>
-        </div>
-      <div className='name-info'>
-          <div className='phonemail'>
-          <a href='/tldr' data-tip data-for='phoneicon'>                                 
-              <img alt="phoneicon" src='https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-phone.svg' height="35px"></img>
-              </a>
-              <ReactTooltip id='phoneicon' place='bottom' color='dodgerblue' effect='solid'>
-              <span>+1 (619) 246-7888</span>
-            </ReactTooltip>
-            
-            <a href='mailto:willdox7@live.com' data-tip data-for='mailicon'>
-                <img alt="emailicon" style={{ borderRadius: '50%' }} src='https://symbols.getvecta.com/stencil_64/9_email.cf5807406d.png' height="35px"></img>              
-            </a>
-            <ReactTooltip id='mailicon' place='bottom' color='dodgerblue' effect='solid'>
-              <span>Email Me</span>
-            </ReactTooltip>
-          </div>
-      </div>      
+        </div>    
       <div className='acc'>
       <div id='basics' className='acc-obj'>
         <Accordion

@@ -120,7 +120,7 @@ margin:20px;
 }
 .about-page.h1 {
 
-  font-family:'Alegreya SC', 'serif';
+  font-family:"Bitter", 'serif';
 }
 .about-line1{
   margin-right:40px;
@@ -490,9 +490,14 @@ margin:10px
 }
 .edu-name {
   font-size:24px;
-  font-family:'Alegreya SC', 'serif';
+  font-family:"Bitter", 'serif';
   margin-bottom:0px;
   text-align:center;
+}
+.projects-page {
+  width:1000px;
+  margin-left:auto;
+  margin-right:auto;
 }
 .degree {
   font-size:16px;

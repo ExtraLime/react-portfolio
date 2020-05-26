@@ -1,48 +1,53 @@
-import React, { useState, useRef,useEffect} from 'react'
-import {inactiveStyle, activeStyle} from './Styles'
+import React, { useState, useRef, useEffect } from 'react'
+import { inactiveStyle, activeStyle } from './Styles'
 
 const DrumPad1 = (props) => {
   const [padStyle, setPadStyle] = useState(inactiveStyle)
-  
-  const handleKeyPress = (e) => { 
+  console.log(props)
+
+  const handleKeyPress = (e) => {
     if (e.keyCode === props.keyCode) {
       playSound()
     }
   }
   const activatePad = () => {
     if (props.power) {
-      padStyle.backgroundColor ==='orange'? 
-      setPadStyle(inactiveStyle):
-      setPadStyle(activeStyle);
-    }else{
+      padStyle.backgroundColor === 'orange' ?
+        setPadStyle(inactiveStyle) :
+        setPadStyle(activeStyle);
+    } else {
       padStyle.marginTop === 13 ?
-      setPadStyle(inactiveStyle):
-      setPadStyle({
-        height: 77,
-        marginTop: 13,
-        backgroundColor: 'grey',
-        boxShadow: "0 3px grey"
-      });
-      }
+        setPadStyle(inactiveStyle) :
+        setPadStyle({
+          height: 77,
+          marginTop: 13,
+          backgroundColor: 'red',
+          boxShadow: "0 3px red"
+        });
     }
+
+  }
   const playSound = (e) => {
     const sound = document.getElementById(props.keyTrigger);
     sound.currentTime = 0;
     sound.play();
     activatePad();
+
   }
-  setTimeout(() => activatePad(), 100);
+  //setTimeout(() => activatePad(), 100);
   props.updateDisplay(props.clipId.replace(/-/g, ' '));
 
-  useEffect(() => {document.addEventListener('keydown', handleKeyPress);})
-return (<div id={props.clipId} 
-  onClick={playSound} 
-  className="drum-pad" 
-  style={padStyle} >
+  useEffect(() => { document.addEventListener('keydown', handleKeyPress); })
+
+  return (
+  <div id={props.clipId}
+       onClick={playSound}
+       className="drum-pad"
+       style={padStyle} >
     <audio className='clip' id={props.keyTrigger} src={props.clip}></audio>
     {props.keyTrigger}
-</div>
-)
+  </div>
+  )
 }
 
 export default DrumPad1;
@@ -104,9 +109,9 @@ export default DrumPad1;
     }
     render() {
       return (
-        <div id={this.props.clipId} 
-          onClick={this.playSound} 
-          className="drum-pad" 
+        <div id={this.props.clipId}
+          onClick={this.playSound}
+          className="drum-pad"
           style={this.state.padStyle} >
             <audio className='clip' id={this.props.keyTrigger} src={this.props.clip}></audio>
             {this.props.keyTrigger}

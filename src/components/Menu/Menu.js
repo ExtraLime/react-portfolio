@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 import Hamburger from "../Burger/Burger";
 import { StyledMenu, StyledLink, StyledImg } from "./Menu.styled";
-import { useOnClickOutside } from "../../hooks";
+import { useOnClickOutside } from "../popup/hooks";
 import { NavLink } from 'react-router-dom';
 import willabjsmall from './will-abj-small.jpg';
 

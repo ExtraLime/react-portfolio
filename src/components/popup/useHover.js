@@ -20,7 +20,6 @@ const useHover = () => {
     // Wrap in useCallback so we can use in dependencies below
     const handleMouseOver = useCallback(() => setValue(true), []);
     const handleMouseOut = useCallback(() => setValue(true), []);
-    const OnClick = useCallback(() => setValue(false), []);
   
     // Keep track of the last node passed to callbackRef
     // so we can remove its event listeners.
@@ -35,7 +34,7 @@ const useHover = () => {
         if (ref.current) {
           ref.current.removeEventListener("mouseover", handleMouseOver);
           ref.current.removeEventListener("mouseout", handleMouseOut);
-          ref.current.addEventListener('click', OnClick);
+
         }
   
         ref.current = node;
@@ -43,10 +42,10 @@ const useHover = () => {
         if (ref.current) {
           ref.current.addEventListener("mouseover", handleMouseOver);
           ref.current.addEventListener("mouseout", handleMouseOut);
-          ref.current.addEventListener('click', OnClick);
+
         }
       },
-      [handleMouseOver, handleMouseOut, OnClick]
+      [handleMouseOver, handleMouseOut]
     );
   
     return [callbackRef, value];

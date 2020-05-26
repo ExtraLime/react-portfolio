@@ -1,52 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Russo+One');
-:root {
-    --padWidth:100px;
-    --padHeight:80px;
-    --track-color: #424242 ;
-    --thumb-color: blue ;
-    --thumb-radius: 0 ;
-    --thumb-height: 25px ;
-    --thumb-width: 8px ;
-    --thumb-shadow-size: 1px ;
-    --thumb-shadow-blur: 1px ;
-    --thumb-shadow-color: #111 ;
-    --thumb-border-width: 0 ;
-    --thumb-border-color: #fff ;
-    --track-width: 100% ;
-    --track-height: 5px ;
-    --track-shadow-size: 2px ;
-    --track-shadow-blur: 2px ;
-    --track-shadow-color: #222 ;
-    --track-border-width: 1px ;
-    --track-border-color: #000 ;
-    --track-radius: 0 ;
-    --contrast: 5% ;
-}
-body {
-  font-family: Russo One;
-}
 
-body {
-  user-select: none;
-  background-color: lighten(grey, 5%);
-}
-
-#root {
-  display: flex;
+.drumkit-container {
+  display: grid;
   justify-content: center;
   align-items: center; 
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "PADS CONTROLS";
+
 }
 .pad-bank {
-    width: var(--padWidth);
-    height: var(--padHeight);
-    display: inline-block;
-    margin: 20px;}
+    grid-area:PADS;
+    width: 100px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 5px;}
+
 .drum-pad {
-        position: relative;
         float: left;
-        width: var(--padWidth);
-        height: var(--padHeight);
+        width: 100px;;
+        height: 100px;;
         margin-right: 10px;
         border-radius: 5px;
         padding-top: 35px;
@@ -57,44 +32,26 @@ body {
 .inner-container {
   outline: 5px solid orange;
   position: relative;
-  width: 660px;
   text-align: center;
   background-color: grey;
   
   }
-  .logo {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-      
-    }
-    .inner-logo {
-        display: inline-block;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 20px;
-      }
-      .control {
-        width: 100px;
-        margin: auto;
-      }
-      p {
-        margin-bottom: 0;
+.control {
+  width: 100px;
+  float:right;
+
       }
 
   .controls-container {
     width: 240px;
-    height: var(--padHeight);
-    display: inline-block;
+    height: 100px;
     margin: 40px 20px 0 10px;
     vertical-align: top;
-    
-
-      
+    float:right;     
     }
-    #display {
+#display {
       width: 200px;
-      background-color: gray;
+      background-color: red;
       margin: 15px auto;
       padding: 15px;
       box-sizing: border-box;

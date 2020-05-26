@@ -1,5 +1,5 @@
 import React, {  useState, useRef } from 'react';
-import { useOnClickOutside } from './hooks';
+import { useOnClickOutside } from './components/popup/hooks';
 import { Menu } from './components';
 
 
@@ -12,7 +12,7 @@ import './App.css'
  
 import Home from './Pages/home/Home';
 import About from './Pages/about/About';
-import Contact from './Pages/Contact';
+import Contact from './Pages/contact/Contact';
 import Error from './Pages/Error';
 import Tldr from './Pages/tldr/Tldr';
 import Projects from './Pages/projects/Projects'

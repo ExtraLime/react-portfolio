@@ -1,7 +1,7 @@
 import React, {useState, useEffect } from 'react'
 import PadBank1 from './PadBank'
 import { bankOne, bankTwo } from './SoundBanks'
-//import './DrumKit.css'
+import './DrumKit.css'
 
 const DrumKit = (props) => {
     const [power, setPower] = useState(true);
@@ -16,7 +16,8 @@ const DrumKit = (props) => {
         };
 
     const displayClipName = (name) => {
-        if (power) {setDisplay(name)}
+        if (power) {console.log(name)
+          setDisplay(name)}
     };
     const selectBank = () => {
         if (power) {
@@ -53,15 +54,8 @@ const DrumKit = (props) => {
                       power={power}
                       updateDisplay={displayClipName}
                       clipVolume={sliderVal}
-                      currentPadBank={currentPadBank} />
-          
-          <div className="logo">
-              <div className="inner-logo ">{'FCC' + String.fromCharCode(160)}</div>
-              <i className="inner-logo fa fa-free-code-camp" />
-            </div>
-  
-                  <div className="controls-container">
-          
+                      currentPadBank={currentPadBank} />  
+                  <div className="controls-container">          
                       <div className="control">
                           <p>Power</p>
                           <div onClick={powerControl} className="select">

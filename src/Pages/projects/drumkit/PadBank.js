@@ -2,6 +2,7 @@ import React, {useState, useRef, useEffect} from 'react'
 import DrumPad1 from './DrumPad'
 
 const PadBank1 = (props) => {
+    console.log(props)
     let padBank;
     props.power ?
     padBank = props.currentPadBank.map((drumObj, i, padBankArr) => {

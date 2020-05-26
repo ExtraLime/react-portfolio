@@ -14,7 +14,7 @@ import cashew from '../../Pages/tldr/icons/cashew.png'
 const About = () => {
    return (
       <div className='about-page'>
-         <h1 style={{ marginTop: '70px', fontFamily: 'Alegreya SC' }}>About Me</h1>
+         <h1 style={{ marginTop: '70px', fontFamily: 'Bitter' }}>About Me</h1>
          <div className='about-intro'>
             <div className='about-line1'>
                <p className='into-text'>By now you know my name is Will Morgan. If you came from the TL;DR page then you may have read
@@ -76,7 +76,7 @@ const About = () => {
          <h5>Early</h5>
          <div className='early'>
             <div className='west-pic'>
-               <img width='150px' src={west} alt="West Coast States Outline Clipart California East Coast@pngkit.com"></img></div>
+               <img width='100px' src={west} alt="West Coast States Outline Clipart California East Coast@pngkit.com"></img></div>
             <article className='text1' >
                <div >
                   <p>I went to highschool in the Pacific Northwest, traveling around the world during the summer.
