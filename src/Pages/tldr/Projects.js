@@ -6,6 +6,9 @@ import resto from './icons/resto.png'
 import math from './icons/math.png'
 import ReactTooltip from "react-tooltip";
 import codes from './icons/openclose.svg'
+import home from './icons/home-button.svg'
+import medium from './icons/medium.svg'
+
 
 import { StyledProjectTitle, ProjectDetail, LinkSet } from './Projects.styled'
 
@@ -25,7 +28,7 @@ const Projects = () => {
                     and visualizing that data through a custom dashboard. Built with ReactJS and ExpressJS.
                     <LinkSet>                    
                             <a target='_blank' href='http://pdxcrimemap.net' rel="noopener noreferrer" data-tip data-for='pdx-site'>
-                                 <img alt='button-link' src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
+                                 <img alt='button-link' src={home} height='30px' width='30px'></img></a>
                             <ReactTooltip id='pdx-site' place='bottom' color='dodgerblue' effect='solid'>
                             <span>Go to Site</span>
                             </ReactTooltip>
@@ -50,7 +53,7 @@ const Projects = () => {
                          as well as advanced mapping techniques.
                          <LinkSet>                    
                             <a target='_blank' rel="noopener noreferrer" data-tip data-for='res-site' href='https://slides.com/will-m/opening-a-restaurant-in-portland-or/#/'>
-                                 <img alt='button-link' src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
+                                 <img alt='button-link' src={home} height='30px' width='30px'></img></a>
                             <ReactTooltip id='res-site' place='bottom' color='dodgerblue' effect='solid'>
                             <span>Go to Presentation</span>
                             </ReactTooltip>
@@ -61,7 +64,7 @@ const Projects = () => {
                             <span>Go to Code</span>
                             </ReactTooltip>
                             <a target='_blank' rel="noopener noreferrer"  data-tip data-for='res-nb' href='https://nbviewer.jupyter.org/github/ExtraLime/Coursea_Capstone/blob/master/pdx_final.ipynb'>
-                                 <img alt='button-link' src='https://symbols.getvecta.com/stencil_85/56_jupyter-icon.a458834856.svg' style={{filter:'grayscale(100%)'}} height='30px' width='30px'></img></a>
+                                 <img alt='button-link' src='https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg' height='30px' width='30px'></img></a>
                             <ReactTooltip id='res-nb' place='bottom' color='dodgerblue' effect='solid'>
                             <span>Go to Notebook</span>
                             </ReactTooltip>
@@ -71,13 +74,13 @@ const Projects = () => {
                 </div>
             <div className='project3'>
             <a target='_blank' href='https://slides.com/will-m/deck#/' rel="noopener noreferrer">
-                <ProjectImg style={{ borderRadius: '30%' }} marginTop='5px' hieght='30px' src={math}></ProjectImg></a>
+                <ProjectImg style={{ borderRadius: '30%' }} marginTop='5px' height='30px' src={math}></ProjectImg></a>
                 <StyledProjectTitle>Classifying Math Lectures</StyledProjectTitle>
                 <ProjectDetail>A data science project that uses machine learning techniques to and compare multiple approaches and models for
                                  multi-class text classification. Applying dimensionality reduction to produce and visualize a stunningly accurate a model.
                      <LinkSet>                    
                             <a target='_blank' rel="noopener noreferrer" href='https://slides.com/will-m/deck#/' data-tip data-for='math-site'>
-                                 <img alt='button-link' src='https://symbols.getvecta.com/stencil_132/30_home-button.4d0733be4a.svg' height='30px' width='30px'></img></a>
+                                 <img alt='button-link' src={home} height='30px' width='30px'></img></a>
                             <ReactTooltip id='math-site' place='bottom' color='dodgerblue' effect='solid'>
                             <span>Go to Presentation</span>
                             </ReactTooltip>
@@ -89,7 +92,7 @@ const Projects = () => {
                             </ReactTooltip>
                             
                             <a target='_blank' rel="noopener noreferrer"  data-tip data-for='math-med' href='https://medium.com/@morga046/multi-class-text-classification-with-doc2vec-and-t-sne-a-full-tutorial-55eb24fc40d3'>
-                                 <img alt='button-link' src='https://symbols.getvecta.com/stencil_88/67_medium-tile.012d359ed6.svg' height='30px' width='30px'></img></a>
+                                 <img alt='button-link' src={medium} height='30px' width='30px'></img></a>
                             <ReactTooltip id='math-med' place='bottom' color='dodgerblue' effect='solid'>
                             <span>Go to Medium Article</span>
                             </ReactTooltip>

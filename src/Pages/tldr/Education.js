@@ -1,4 +1,5 @@
 import React from 'react'
+import github from './icons/github.svg'
 
 const Education = () => {
     return (
@@ -33,8 +34,8 @@ const Education = () => {
             <p className='edu-loc'>Remote</p>
             <p className='degree'>Full Stack Web Development 	March 2020 </p> 
             <p className='focus'>Completed over 1000 learning hours covering responsive web design(HTML5,CSS), algorithms and data structures in javascript(mapReduce), front end libraries (React, Redux).</p>
-            <p className='focus'>Completed numerous projects employing skills and techniques learned throughout the course.
-            <a rel="noopener noreferrer" href='https://www.github.com/ExtraLime' target='_blank'><img width='15px' alt='lilgit' src='https://symbols.getvecta.com/stencil_65/16_github.acd49fdd74.svg'></img></a></p>
+            <p className='focus'>Completed numerous projects employing skills and techniques learned throughout the course.  
+            <a rel="noopener noreferrer" href='https://www.github.com/ExtraLime' target='_blank'><img width='15px' alt='lilgit' src={github} style={{marginLeft:'15px'}}></img></a></p>
             </div>
             </div>
         </div>

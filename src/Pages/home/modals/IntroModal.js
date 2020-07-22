@@ -16,7 +16,7 @@ const IntroModal = (props) => {
                     <StyledText>Otherwise</StyledText>
                     <p>Click Continue!</p>
                     <LinkSet>
-                        <StyledLink><NavLink to="/tldr">Go to TL;DR</NavLink></StyledLink>
+                        <StyledLink><NavLink to="/tldr">Go to Professional page</NavLink></StyledLink>
                         <StyledRow><StyledLink onClick={() => props.onClickNext()}>Continue</StyledLink></StyledRow>
                     </LinkSet>
                 </Dialog>

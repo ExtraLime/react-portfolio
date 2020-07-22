@@ -3,25 +3,39 @@ import React from 'react'
 
 import linux from './linux.svg'
 import nginx from './nginx.svg'
+import docker from './docker-icon.svg'
+import digitalocean from './digital-ocean-icon.svg'
+import gcp from './generic-gcp.svg'
+import azure from './microsoft-azure-icon.svg'
+import AWS from './amazon-web-services-icon.svg'
+import heroku from './heroku.svg'
+import apache from './apache-software-foundation-official.svg'
+import xlsx from './microsoft-excel.svg'
+import access from './microsoft-access.svg'
+import word from './microsoft-word.svg'
+import ubuntu from './ubuntu-icon.svg'
+import git from './github.svg'
+
+
+
 
 const DoIcons = () => {
     return (
         <>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_78/87_docker-tile.559909c0a0.svg' height="20px"></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_78/60_digital-ocean.cf239dcdd7.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_82/39_google-cloud.21420ae20f.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_88/87_microsoft-azure.a599dee196.svg' height='20px'></img>
-        <img alt="doicon" src={linux} height="20px"></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_73/84_amazon-web-services-icon.4657002904.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_83/40_heroku-icon.b94c7c6088.svg' height='20px'></img>
-        <img alt="doicon" src={nginx} height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_74/5_apache-software-foundation.ea8baa6b69.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_33/1_microsoft-excel.275029ec56.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_33/4_microsoft-access.688573998d.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_33/0_microsoft-word.8e0b7b27ad.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_99/7_ubuntu-icon.c9016b8343.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_240/209_ssl-terminator.30f16b7545.svg' height='20px'></img>
-        <img alt="doicon" src='https://symbols.getvecta.com/stencil_81/38_git-icon.a068511417.svg' height='20px'></img>       
+        <img alt="docker-icon" src={docker} height="20px"></img>
+        <img alt="do-icon" src={digitalocean} height='20px'></img>
+        <img alt="gcp-icon" src={gcp} height='20px'></img>
+        <img alt="azure-icon" src={azure} height='20px'></img>
+        <img alt="linux-icon" src={linux} height="20px"></img>
+        <img alt="AWS-icon" src={AWS} height='20px'></img>
+        <img alt="heroku-icon" src={heroku} height='20px'></img>
+        <img alt="nginx" src={nginx} height='20px'></img>
+        <img alt="apache" src={apache} height='20px'></img>
+        <img alt="xlsx" src={xlsx} height='20px'></img>
+        <img alt="access" src={access} height='20px'></img>
+        <img alt="word" src={word} height='20px'></img>
+        <img alt="ubuntu" src={ubuntu} height='20px'></img>
+        <img alt="git-icon" src={git} height='20px'></img>       
         </>
     )
 }

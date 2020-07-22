@@ -9,7 +9,7 @@ const ExploreModal = (props) => {
         <Root>
             <Overlay>
                 <Dialog>                
-                <StyledText><img filter='sephia(100%)' height='15px' src='https://symbols.getvecta.com/stencil_196/23_reverse-button.fbfe42e8ea.svg' alt='left'></img> Click the Menu Button to navigate!</StyledText>
+                <StyledText><img filter='sephia(100%)' height='15px' src='https://symbols.getvecta.com/stencil_196/23_reverse-button.fbfe42e8ea.svg' alt='<-'></img> Click the Menu Button to navigate!</StyledText>
                 <LinkSet>
                     <StyledRow><StyledLink onClick={() => props.onClose()}>[Got it!]</StyledLink></StyledRow>
                 </LinkSet>

@@ -3,6 +3,7 @@ import s3c from './icons/s3c.png'
 import stnc from './icons/logo-stnc.png'
 import openclose from './icons/openclose.svg'
 import cargo from './icons/cargo.svg'
+import wf from './icons/wells-fargo-icon.svg'
 
 const Experience = () => {
     return (
@@ -29,7 +30,7 @@ const Experience = () => {
 
                 <li>Recently deployed <a target='_blank' rel='noopener noreferrer' href='https://www.eurodesign.info'>EuroDesign.</a></li>
                 </ul>
-                <p className='position'>Independant Consultant for International Trade</p>
+                <p className='position'>Independent Consultant for International Trade</p>
                 <ul className='duties'>
                 <li>Provide effective guidance to newly established cashew processing plants around the world.</li>
                 <li>As part of the consultancy, brokered machine and part sales totaling over USD 20,000,000 since 2018.</li>
@@ -118,7 +119,7 @@ const Experience = () => {
             <div className='wells'>
                 <div><p className='date-span'>July 2011 – June 2012</p></div>
                 <div className='wells-grid'>
-                    <div className="clogo"><a rel="noopener noreferrer" target='_blank' href='https://www.wellsfargo.com'><img src="https://symbols.getvecta.com/stencil_101/44_wells-fargo-icon.7009538bf1.svg" alt="logowf" width="150" height="100"></img></a></div>
+                    <div className="clogo"><a rel="noopener noreferrer" target='_blank' href='https://www.wellsfargo.com'><img src={wf} alt="logowf" width="150" height="100"></img></a></div>
                     <div className='wells-info'>
                         <p className='company'>Wells Fargo N.A.</p>
                         <p className='location'>Portland, OR</p>
