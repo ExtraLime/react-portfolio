@@ -9,6 +9,7 @@ import openclose from '../../Pages/tldr/icons/openclose.svg'
 import tennis from '../../Pages/tldr/icons/tennis.png'
 import cacao from '../../Pages/tldr/icons/cacao.svg'
 import cashew from '../../Pages/tldr/icons/cashew.png'
+import soundcloud from '../tldr/icons/soundcloud-icon.svg'
 
 
 const About = () => {
@@ -68,7 +69,7 @@ const About = () => {
          <div className='about-container' id='music-cont'>
             <p>I play guitar, bass, and trunmpet.</p>
             <p>I produce electronic/hip-hop beats as a hobby. Check out my
-                     <a target='_blank' rel='noopener noreferrer' href='https://soundcloud.com/willdox7'>     <img src='https://symbols.getvecta.com/stencil_65/23_soundcloud.7a21c6a8fd.svg' height='15px' alt='soundcloud-icon'></img>.</a>
+                     <a target='_blank' rel='noopener noreferrer' href='https://soundcloud.com/willdox7'>     <img src={soundcloud} height='15px' alt='soundcloud-icon'></img>.</a>
             </p>
          </div>
 
@@ -117,8 +118,8 @@ const About = () => {
             <h5>Then I moved back to Portland</h5>
             <div className='about-container' id='about-end'>
             <img src='https://cascadia.party/img/doug.svg' alt='cascaidapartyicons-dougfir' height='150px'></img>
-               <p>For the last two years, I've been learning to code and driving Uber and Lyft to pay for it.  As I am trained in Economics and
-               Math, my naturally starting point was data science, through my data science projects, I developed the need to display my projects.
+               <p>For the last two years, I've been learning to code and driving Uber/Lyft to pay for it.  As I am trained in Economics and
+               Math, my natural starting point was data science. Through my data science projects, I developed the need to display my projects.
                This led me to learn some front-end development. As my projects began to require more dynamic content, I eventually learned the back-end as well.
                You can check out some of my projects on the <NavLink to='/projects'>Projects</NavLink> page</p>
             </div>
