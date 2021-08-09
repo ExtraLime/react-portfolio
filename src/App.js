@@ -12,10 +12,9 @@ import './App.css'
  
 import Home from './Pages/home/Home';
 import About from './Pages/about/About';
-import Contact from './Pages/contact/Contact';
 import Error from './Pages/Error';
-import Tldr from './Pages/tldr/Tldr';
-import Projects from './Pages/projects/Projects'
+
+import Skills from './Pages/skills/Skills'
  
 export default function App()  {
   const [open, setOpen] = useState(false);
@@ -33,10 +32,8 @@ export default function App()  {
           <Menu open={open} setOpen={setOpen} id={menuId} />       
             <Switch>
              <Route path="/" component={Home} exact/>
-             <Route path='/tldr' component={Tldr}/>
              <Route path="/about" component={About}/>
-             <Route path="/contact" component={Contact}/>
-             <Route path="/projects" component={Projects}/>
+             <Route path="/skills" component={Skills}/>
             <Route component={Error}/>
            </Switch>
       </BrowserRouter>

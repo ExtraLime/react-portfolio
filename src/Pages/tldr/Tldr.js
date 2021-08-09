@@ -17,8 +17,7 @@ const Tldr = () => {
 
   return (
     <div className='tldr-page'>
-      <div className='resLink'><h6 style={{textAlign:'right',marginTop:'10px'}}>Looking for a resume?<a target='_blank' rel='noopener noreferrer' href='https://docs.google.com/document/d/1Y3DyQ2scrdwkbHY9ufcTcWApyNM7eUMcFi15c1K4GGQ/edit?usp=sharing'>
-        <img src={document} alt='paper-resume-link' height='25px'></img></a></h6></div>
+
       <div style={{ textAlign: 'center',fontFamily: 'Alegreya SC' }} className='info'>
           <h2>William Morgan</h2>
           <h5>Portland, Oregon</h5>

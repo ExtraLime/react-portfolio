@@ -121,7 +121,7 @@ const About = () => {
                <p>For the last two years, I've been learning to code and driving Uber/Lyft to pay for it.  As I am trained in Economics and
                Math, my natural starting point was data science. Through my data science projects, I developed the need to display my projects.
                This led me to learn some front-end development. As my projects began to require more dynamic content, I eventually learned the back-end as well.
-               You can check out some of my projects on the <NavLink to='/projects'>Projects</NavLink> page</p>
+               You can check out some of my projects on the <NavLink to='/skills'>Skills</NavLink> page</p>
             </div>
          </div>
       </div>

@@ -98,7 +98,7 @@ const Projects = () => {
                             </ReactTooltip>
                         </LinkSet>
                     </ProjectDetail>
-                    <div className='gotoprojects'> <NavLink to='/projects'>Go to All Projects</NavLink></div>
+                    <div className='gotoprojects'>See the <NavLink to='/skills'> skills page</NavLink> too</div>
             </div>
         </div>
     )
