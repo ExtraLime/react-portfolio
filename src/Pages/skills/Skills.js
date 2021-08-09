@@ -142,6 +142,7 @@ const Skills = () => {
       { ...edgeTypes['devops'],from: "PDXCrimeMap",to: "Nginx" },
       { ...edgeTypes['devops'],from: "PDXCrimeMap",to: "Docker" },
       { ...edgeTypes['front'],from: "PDXCrimeMap",to: "React" },
+      { ...edgeTypes['front'],from: "PDXCrimeMap",to: "JavaScript" },
       { ...edgeTypes['devops'],from: "PDXCrimeMap",to: "Heroku" },
       {...edgeTypes['vis'], from: "PDXCrimeMap",to: "D3" },
       { ...edgeTypes['back'],from: "PDXCrimeMap",to: "PHP" },
@@ -202,7 +203,7 @@ const Skills = () => {
         parentCentralization: true,
         direction: 'LR',        // UD, DU, LR, RL
         sortMethod: 'hubsize',  // hubsize, directed
-        shakeTowards: 'roots'  // roots, leaves
+        shakeTowards: 'leaves'  // roots, leaves
       }
     },
     edges:{
